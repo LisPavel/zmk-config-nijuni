@@ -9,7 +9,7 @@
 
 / {
     behaviors {
-        hm: homerow_mods {
+        hrm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             bindings = <&kp>, <&kp>;
@@ -20,7 +20,7 @@
             flavor = "balanced";
         };
 
-        arrow_fn_on_hold: arrow_fn_on_hold {
+        arrow_hold: arrow_fn_on_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "ARROW_FN_ON_HOLD";
             bindings = <&arrow_fn>, <&kp>;
@@ -52,10 +52,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp LA(SPACE)  &kp Q           &kp W           &kp E        &kp R                 &kp T        &kp Y            &kp U            &kp I        &kp O       &kp P                    &kp LEFT_BRACKET
-&kp GRAVE      &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D  &lt 1 F               &kp G        &kp H            &lt 1 J          &hm RCTRL K  &hm RALT L  &hm RIGHT_GUI SEMICOLON  &kp SQT
-&kp LG(SPACE)  &kp Z           &kp X           &kp C        &kp V                 &kp B        &kp N            &kp M            &kp COMMA    &kp DOT     &kp FSLH                 &kp RBKT
-                                               &kp ESCAPE   &hm LEFT_SHIFT SPACE  &lt 3 TAB    &lt 2 BACKSPACE  &hm RSHFT ENTER  &kp DELETE
+&kp LA(SPACE)  &kp Q            &kp W            &kp E         &kp R                  &kp T        &kp Y            &kp U             &kp I         &kp O        &kp P                     &kp LEFT_BRACKET
+&kp GRAVE      &hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LCTRL D  &lt 1 F                &kp G        &kp H            &lt 1 J           &hrm RCTRL K  &hrm RALT L  &hrm RIGHT_GUI SEMICOLON  &kp SQT
+&kp LG(SPACE)  &kp Z            &kp X            &kp C         &kp V                  &kp B        &kp N            &kp M             &kp COMMA     &kp DOT      &kp FSLH                  &kp RBKT
+                                                 &kp ESCAPE    &hrm LEFT_SHIFT SPACE  &lt 3 TAB    &lt 2 BACKSPACE  &hrm RSHFT ENTER  &kp DELETE
             >;
         };
 
@@ -70,10 +70,10 @@
 
         symbols {
             bindings = <
-&none  &kp CARET       &kp LEFT_BRACE    &kp PLUS                   &kp RIGHT_BRACE    &kp DOLLAR           &none     &kp PERCENT           &kp ASTERISK   &kp HASH               &kp TILDE      &none
-&none  &kp GRAVE       &kp LEFT_BRACKET  &arrow_fn_on_hold 0 EQUAL  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES    &kp PIPE  &kp LEFT_PARENTHESIS  &kp SQT        &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &none
-&none  &kp UNDERSCORE  &kp EXCLAMATION   &kp AMPERSAND              &kp MINUS          &kp AT_SIGN          &none     &none                 &kp LESS_THAN  &kp GREATER_THAN       &kp QUESTION   &none
-                                         &trans                     &trans             &trans               &trans    &trans                &trans
+&none  &kp CARET       &kp LEFT_BRACE    &kp PLUS             &kp RIGHT_BRACE    &kp DOLLAR           &none     &kp PERCENT           &kp ASTERISK   &kp HASH               &kp TILDE      &none
+&none  &kp GRAVE       &kp LEFT_BRACKET  &arrow_hold 0 EQUAL  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES    &kp PIPE  &kp LEFT_PARENTHESIS  &kp SQT        &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &none
+&none  &kp UNDERSCORE  &kp EXCLAMATION   &kp AMPERSAND        &kp MINUS          &kp AT_SIGN          &none     &none                 &kp LESS_THAN  &kp GREATER_THAN       &kp QUESTION   &none
+                                         &trans               &trans             &trans               &trans    &trans                &trans
             >;
         };
 
