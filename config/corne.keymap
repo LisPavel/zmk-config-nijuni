@@ -5,7 +5,9 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 / {
     behaviors {
@@ -77,11 +79,20 @@
 
         additional {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &none  &none      &none      &none      &none     &bt BT_CLR    &none         &none         &none         &none         &bt BT_CLR_ALL
+&none  &none  &mkp RCLK  &mkp MCLK  &mkp LCLK  &none     &bt BT_SEL 3  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4  &none
+&none  &none  &none      &none      &none      &none     &none         &none         &none         &none         &none         &none
+                         &trans     &trans     &trans    &trans        &trans        &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        activate_additional {
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 };
