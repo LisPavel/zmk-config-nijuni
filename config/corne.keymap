@@ -19,17 +19,6 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
         };
-
-        arrow_hold: arrow_fn_on_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ARROW_FN_ON_HOLD";
-            bindings = <&arrow_fn>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-        };
     };
 
     macros {
@@ -70,10 +59,10 @@
 
         symbols {
             bindings = <
-&none  &kp CARET       &kp LEFT_BRACE    &kp PLUS             &kp RIGHT_BRACE    &kp DOLLAR           &none     &kp PERCENT           &kp ASTERISK   &kp HASH               &kp TILDE      &none
-&none  &kp GRAVE       &kp LEFT_BRACKET  &arrow_hold 0 EQUAL  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES    &kp PIPE  &kp LEFT_PARENTHESIS  &kp SQT        &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &none
-&none  &kp UNDERSCORE  &kp EXCLAMATION   &kp AMPERSAND        &kp MINUS          &kp AT_SIGN          &none     &none                 &kp LESS_THAN  &kp GREATER_THAN       &kp QUESTION   &none
-                                         &trans               &trans             &trans               &trans    &trans                &trans
+&none  &kp CARET       &kp LEFT_BRACE    &kp PLUS       &kp RIGHT_BRACE    &kp DOLLAR           &none     &kp PERCENT           &kp ASTERISK   &kp HASH               &kp TILDE      &none
+&none  &kp GRAVE       &kp LEFT_BRACKET  &kp EQUAL      &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES    &kp PIPE  &kp LEFT_PARENTHESIS  &kp SQT        &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &none
+&none  &kp UNDERSCORE  &kp EXCLAMATION   &kp AMPERSAND  &kp MINUS          &kp AT_SIGN          &none     &arrow_fn             &kp LESS_THAN  &kp GREATER_THAN       &kp QUESTION   &none
+                                         &trans         &trans             &trans               &trans    &trans                &trans
             >;
         };
 
