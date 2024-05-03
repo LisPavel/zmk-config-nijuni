@@ -38,8 +38,6 @@
             label = "J_TD";
             #binding-cells = <0>;
             bindings = <&hrl 1 J>, <&kp J>;
-
-            tapping-term-ms = <175>;
         };
 
         k_td: k_td {
@@ -47,8 +45,6 @@
             label = "K_TD";
             #binding-cells = <0>;
             bindings = <&hrm RCTRL K>, <&kp K>;
-
-            tapping-term-ms = <175>;
         };
 
         l_td: l_td {
@@ -56,8 +52,6 @@
             label = "L_TD";
             #binding-cells = <0>;
             bindings = <&hrm RALT L>, <&kp L>;
-
-            tapping-term-ms = <175>;
         };
     };
 
