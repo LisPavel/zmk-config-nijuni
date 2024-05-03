@@ -32,27 +32,6 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
         };
-
-        j_td: j_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "J_TD";
-            #binding-cells = <0>;
-            bindings = <&hrl 1 J>, <&kp J>;
-        };
-
-        k_td: k_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "K_TD";
-            #binding-cells = <0>;
-            bindings = <&hrm RCTRL K>, <&kp K>;
-        };
-
-        l_td: l_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "L_TD";
-            #binding-cells = <0>;
-            bindings = <&hrm RALT L>, <&kp L>;
-        };
     };
 
     macros {
@@ -100,9 +79,9 @@
             //                                     '-----------+-----------+----------------'       '----------------+-----------------+-----------'
 
             bindings = <
-&kp LA(SPACE)  &kp Q        &kp W        &kp E         &kp R       &kp T                &kp Y              &kp U             &kp I       &kp O    &kp P                &kp LEFT_BRACKET
-&kp GRAVE      &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F    &kp G                &kp H              &j_td             &k_td       &l_td    &hrm RGUI SEMICOLON  &kp SQT
-&kp LG(SPACE)  &kp Z        &kp X        &kp C         &kp V       &kp B                &kp N              &kp M             &kp COMMA   &kp DOT  &kp FSLH             &kp RBKT
+&kp LA(SPACE)  &kp Q        &kp W        &kp E         &kp R       &kp T                &kp Y              &kp U             &kp I         &kp O        &kp P                &kp LEFT_BRACKET
+&kp GRAVE      &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F    &kp G                &kp H              &hrl 1 J          &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &kp SQT
+&kp LG(SPACE)  &kp Z        &kp X        &kp C         &kp V       &kp B                &kp N              &kp M             &kp COMMA     &kp DOT      &kp FSLH             &kp RBKT
                                          &kp ESCAPE    &hrl 3 TAB  &hrm LSHIFT SPACE    &hrm RSHIFT ENTER  &hrl 2 BACKSPACE  &kp DELETE
             >;
         };
