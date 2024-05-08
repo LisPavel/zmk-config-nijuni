@@ -88,10 +88,10 @@
 
         symb_numb {
             bindings = <
-&kp GRAVE       &kp CARET        &arrow_fn      &kp PLUS          &kp ASTRK          &kp DLLR    &kp PIPE  &kp N7  &kp N8  &kp N9  &kp BSLH               &kp TILDE
-&kp AT          &hrm LMETA LBRC  &hrm LALT SQT  &hrm LCTRL EQUAL  &kp DOUBLE_QUOTES  &kp RBRC    &kp LPAR  &kp N4  &kp N5  &kp N6  &kp RIGHT_PARENTHESIS  &kp PERCENT
-&kp UNDERSCORE  &kp LBKT         &kp EXCL       &kp AMPS          &kp MINUS          &kp RBKT    &kp N0    &kp N1  &kp N2  &kp N3  &kp DOT                &kp HASH
-                                                &trans            &trans             &trans      &trans    &trans  &trans
+&kp HASH  &kp CARET        &kp PIPE         &kp PLUS          &kp ASTRK          &kp DLLR    &kp PERCENT  &kp N7  &kp N8  &kp N9  &kp BSLH               &kp TILDE
+&kp AT    &hrm LMETA LBRC  &hrm LALT UNDER  &hrm LCTRL EQUAL  &kp DOUBLE_QUOTES  &kp RBRC    &kp LPAR     &kp N4  &kp N5  &kp N6  &kp RIGHT_PARENTHESIS  &arrow_fn
+&none     &kp LBKT         &kp EXCL         &kp AMPS          &kp MINUS          &kp RBKT    &kp N0       &kp N1  &kp N2  &kp N3  &kp FSLH               &none
+                                            &trans            &trans             &trans      &trans       &trans  &trans
             >;
         };
 
