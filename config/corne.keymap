@@ -40,6 +40,21 @@
             bindings = <&kp EQUAL &kp GT>;
             label = "ARROW_FN";
         };
+
+        switch_lng_delayed: switch_lng_delayed {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_META>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_wait_time 50>,
+                <&macro_release>,
+                <&kp LEFT_META>;
+
+            label = "SWITCH_LNG_DELAYED";
+        };
     };
 
     combos {
@@ -97,10 +112,10 @@
             //                              '------------+------------+-------'       '-----------+----------------+----------------'
 
             bindings = <
-&none  &none      &kp C_VOLUME_DOWN  &kp C_MUTE       &kp C_VOLUME_UP     &none     &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
-&none  &kp LGUI   &hrm LALT C_PREV   &hrm LCTRL C_PP  &hrm LSHIFT C_NEXT  &none     &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
-&none  &kp LC(Z)  &kp LC(X)          &kp LC(INS)      &kp LS(INS)         &none     &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
-                                     &trans           &trans              &trans    &trans          &kp BACKSPACE     &trans
+&none  &switch_lng_delayed  &kp C_VOLUME_DOWN  &kp C_MUTE       &kp C_VOLUME_UP     &kp LA(SPACE)    &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
+&none  &kp LGUI             &hrm LALT C_PREV   &hrm LCTRL C_PP  &hrm LSHIFT C_NEXT  &none            &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
+&none  &kp LC(Z)            &kp LC(X)          &kp LC(INS)      &kp LS(INS)         &none            &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
+                                               &trans           &trans              &trans           &trans          &kp BACKSPACE     &trans
             >;
         };
 
