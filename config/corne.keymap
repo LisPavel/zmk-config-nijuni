@@ -197,24 +197,6 @@
                               &trans  &trans      &trans    &trans        &trans        &trans
             >;
         };
-
-        symb_numb {
-            bindings = <
-&kp HASH  &kp CARET        &kp PIPE         &kp PLUS          &kp ASTRK          &kp DLLR    &kp PERCENT  &kp N7  &kp N8  &kp N9  &kp BSLH               &kp TILDE
-&kp AT    &hrm LMETA LBRC  &hrm LALT UNDER  &hrm LCTRL EQUAL  &kp DOUBLE_QUOTES  &kp RBRC    &kp LPAR     &kp N4  &kp N5  &kp N6  &kp RIGHT_PARENTHESIS  &arrow_fn
-&none     &kp LBKT         &kp EXCL         &kp AMPS          &kp MINUS          &kp RBKT    &kp N0       &kp N1  &kp N2  &kp N3  &kp FSLH               &none
-                                            &trans            &trans             &trans      &trans       &trans  &trans
-            >;
-        };
-
-        fn_layer {
-            bindings = <
-&trans  &kp F10  &kp F7  &kp F8  &kp F9  &trans    &bt BT_CLR    &trans        &trans        &trans        &bt BT_CLR_ALL  &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans    &bt BT_SEL 3  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4    &trans
-&trans  &kp F12  &kp F1  &kp F2  &kp F3  &trans    &trans        &trans        &trans        &trans        &trans          &trans
-                         &trans  &trans  &trans    &trans        &trans        &trans
-            >;
-        };
     };
 
     conditional_layers {
