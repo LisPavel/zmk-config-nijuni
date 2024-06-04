@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 / {
     behaviors {
@@ -117,7 +118,7 @@
             bindings = <
 &none  &kp Q        &kp W        &kp E         &kp R       &kp T                &kp Y              &kp U             &kp I         &kp O        &kp P                &none
 &none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F    &kp G                &kp H              &hrl 1 J          &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
-&none  &kp Z        &kp X        &kp C         &kp V       &kp B                &kp N              &kp M             &kp COMMA     &kp DOT      &kp FSLH             &none
+&none  &hrl 5 Z     &kp X        &kp C         &kp V       &kp B                &kp N              &kp M             &kp COMMA     &kp DOT      &kp FSLH             &none
                                  &kp ESCAPE    &hrl 3 TAB  &hrm LSHIFT SPACE    &hrm RSHIFT ENTER  &hrl 2 BACKSPACE  &kp DELETE
             >;
         };
@@ -195,6 +196,15 @@
 &none  &bt BT_CLR_ALL  &none  &none   &bt BT_CLR  &none     &bt BT_SEL 3  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4  &none
 &none  &none           &none  &none   &none       &none     &none         &none         &none         &none         &none         &none
                               &trans  &trans      &trans    &trans        &trans        &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp MB3  &mkp MB2  &mkp MB1    &trans  &trans  &trans
             >;
         };
     };
