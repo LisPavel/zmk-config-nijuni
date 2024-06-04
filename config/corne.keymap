@@ -31,6 +31,13 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
         };
+
+        switch_lng: switch_lng {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SWITCH_LNG";
+            #binding-cells = <0>;
+            bindings = <&switch_lng_meta_spc>, <&switch_lng_shft_alt>;
+        };
     };
 
     macros {
@@ -41,7 +48,7 @@
             label = "ARROW_FN";
         };
 
-        switch_lng_delayed: switch_lng_delayed {
+        switch_lng_meta_spc: switch_lng_meta_spc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -53,7 +60,22 @@
                 <&macro_release>,
                 <&kp LEFT_META>;
 
-            label = "SWITCH_LNG_DELAYED";
+            label = "SWITCH_LNG_META_SPC";
+        };
+
+        switch_lng_shft_alt: switch_lng_shft_alt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp LALT>,
+                <&macro_wait_time 50>,
+                <&macro_release>,
+                <&kp LSHIFT>;
+
+            label = "SWITCH_LNG_SHFT_ALT";
         };
     };
 
@@ -93,10 +115,10 @@
             //                                     '-----------+-----------+----------------'       '----------------+-----------------+-----------'
 
             bindings = <
-&kp LA(SPACE)  &kp Q        &kp W        &kp E         &kp R       &kp T                &kp Y              &kp U             &kp I         &kp O        &kp P                &kp LEFT_BRACKET
-&kp GRAVE      &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F    &kp G                &kp H              &hrl 1 J          &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &kp SQT
-&kp LG(SPACE)  &kp Z        &kp X        &kp C         &kp V       &kp B                &kp N              &kp M             &kp COMMA     &kp DOT      &kp FSLH             &kp RBKT
-                                         &kp ESCAPE    &hrl 3 TAB  &hrm LSHIFT SPACE    &hrm RSHIFT ENTER  &hrl 2 BACKSPACE  &kp DELETE
+&none  &kp Q        &kp W        &kp E         &kp R       &kp T                &kp Y              &kp U             &kp I         &kp O        &kp P                &none
+&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F    &kp G                &kp H              &hrl 1 J          &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
+&none  &kp Z        &kp X        &kp C         &kp V       &kp B                &kp N              &kp M             &kp COMMA     &kp DOT      &kp FSLH             &none
+                                 &kp ESCAPE    &hrl 3 TAB  &hrm LSHIFT SPACE    &hrm RSHIFT ENTER  &hrl 2 BACKSPACE  &kp DELETE
             >;
         };
 
@@ -112,10 +134,10 @@
             //                              '------------+------------+-------'       '-----------+----------------+----------------'
 
             bindings = <
-&none  &switch_lng_delayed  &kp C_VOLUME_DOWN  &kp C_MUTE       &kp C_VOLUME_UP     &kp LA(SPACE)    &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
-&none  &kp LGUI             &hrm LALT C_PREV   &hrm LCTRL C_PP  &hrm LSHIFT C_NEXT  &none            &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
-&none  &kp LC(Z)            &kp LC(X)          &kp LC(INS)      &kp LS(INS)         &none            &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
-                                               &trans           &trans              &trans           &trans          &kp BACKSPACE     &trans
+&none  &switch_lng  &kp C_VOLUME_DOWN  &kp C_MUTE       &kp C_VOLUME_UP     &kp LA(SPACE)    &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
+&none  &kp LGUI     &hrm LALT C_PREV   &hrm LCTRL C_PP  &hrm LSHIFT C_NEXT  &none            &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
+&none  &kp LC(Z)    &kp LC(X)          &kp LC(INS)      &kp LS(INS)         &none            &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
+                                       &trans           &trans              &trans           &trans          &kp BACKSPACE     &trans
             >;
         };
 
