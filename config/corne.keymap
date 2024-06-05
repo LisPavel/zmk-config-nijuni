@@ -17,7 +17,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <170>;
             quick-tap-ms = <0>;
             flavor = "balanced";
         };
@@ -28,9 +28,16 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <170>;
             quick-tap-ms = <0>;
             flavor = "balanced";
+        };
+
+        switch_lng: switch_lng {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SWITCH_LNG";
+            #binding-cells = <0>;
+            bindings = <&switch_lng_meta_spc>, <&switch_lng_shft_alt>;
         };
     };
 
@@ -40,6 +47,36 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
             label = "ARROW_FN";
+        };
+
+        switch_lng_meta_spc: switch_lng_meta_spc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_META>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_wait_time 50>,
+                <&macro_release>,
+                <&kp LEFT_META>;
+
+            label = "SWITCH_LNG_META_SPC";
+        };
+
+        switch_lng_shft_alt: switch_lng_shft_alt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp LALT>,
+                <&macro_wait_time 50>,
+                <&macro_release>,
+                <&kp LSHIFT>;
+
+            label = "SWITCH_LNG_SHFT_ALT";
         };
     };
 
@@ -52,98 +89,122 @@
             layers = <0>;
             timeout-ms = <50>;
         };
+
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <2 3>;
+        };
+
+        combo_del {
+            bindings = <&kp DEL>;
+            key-positions = <8 9>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         base {
-// .----------------------------------------------------------------------------.       .-------------------------------------------------------------------------------.
-// | ALT(SPACE) |    Q      |    W     |   E       |    R      |    T           |       |   Y            |    U            |    I      |    O     |     P    |    [     |
-// |------------+-----------+----------+-----------+-----------+----------------|       |----------------+-----------------+-----------+----------+----------+----------|
-// |      `     | LGUI / A  | LALT / S | LCTRL / D | NAV / F   |    G           |       |   H            |  NAV / J        | RCTRL / K | RALT / L | RGUI / ; |     '    |
-// |------------+-----------+----------+-----------+-----------+----------------|       |----------------+-----------------+-----------+----------+----------+----------|
-// | GUI(SPACE) |    Z      |    X     |   C       |    V      |     B          |       |       N        |    M            |    ,      |    .     |     /    |     ]    |
-// '-----------------------------------+-----------+-----------+----------------|       |----------------+-----------------+-----------+--------------------------------'
-//                                     |  ESC      | NUM / TAB | LSHIFT / SPACE |       | RSHIFT / ENTER | SYM / BACKSPACE | DELETE    |
-//                                     '-----------+-----------+----------------'       '----------------+-----------------+-----------'
+            // .----------------------------------------------------------------------------.       .-------------------------------------------------------------------------------.
+            // | ALT(SPACE) |    Q      |    W     |   E       |    R      |    T           |       |   Y            |    U            |    I      |    O     |     P    |    [     |
+            // |------------+-----------+----------+-----------+-----------+----------------|       |----------------+-----------------+-----------+----------+----------+----------|
+            // |      `     | LGUI / A  | LALT / S | LCTRL / D | NAV / F   |    G           |       |   H            |  NAV / J        | RCTRL / K | RALT / L | RGUI / ; |     '    |
+            // |------------+-----------+----------+-----------+-----------+----------------|       |----------------+-----------------+-----------+----------+----------+----------|
+            // | GUI(SPACE) |    Z      |    X     |   C       |    V      |     B          |       |       N        |    M            |    ,      |    .     |     /    |     ]    |
+            // '-----------------------------------+-----------+-----------+----------------|       |----------------+-----------------+-----------+--------------------------------'
+            //                                     |  ESC      | NUM / TAB | LSHIFT / SPACE |       | RSHIFT / ENTER | SYM / BACKSPACE | DELETE    |
+            //                                     '-----------+-----------+----------------'       '----------------+-----------------+-----------'
+
             bindings = <
-&kp LA(SPACE)  &kp Q        &kp W        &kp E         &kp R       &kp T                &kp Y              &kp U             &kp I         &kp O        &kp P                &kp LEFT_BRACKET
-&kp GRAVE      &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F    &kp G                &kp H              &hrl 1 J          &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &kp SQT
-&kp LG(SPACE)  &kp Z        &kp X        &kp C         &kp V       &kp B                &kp N              &kp M             &kp COMMA     &kp DOT      &kp FSLH             &kp RBKT
-                                         &kp ESCAPE    &hrl 3 TAB  &hrm LSHIFT SPACE    &hrm RSHIFT ENTER  &hrl 2 BACKSPACE  &kp DELETE
+&none  &kp Q        &kp W        &kp E         &kp R       &kp T                &kp Y              &kp U             &kp I         &kp O        &kp P                &none
+&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F    &kp G                &kp H              &hrl 1 J          &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
+&none  &hrl 5 Z     &kp X        &kp C         &kp V       &kp B                &kp N              &kp M             &kp COMMA     &kp DOT      &kp FSLH             &none
+                                 &kp ESCAPE    &hrl 3 TAB  &hrm LSHIFT SPACE    &hrm RSHIFT ENTER  &hrl 2 BACKSPACE  &kp DELETE
             >;
         };
 
         navigation {
-// .--------------------------------------------------------------.       .-----------------------------------------------------------------------------.
-// |       |       |       VOL- |      MUTE  |     VOL+   |       |       | PAGE_DOWN | WORKSPACE_PREV | WORKSPACE_NEXT | PAGE_UP |   INSERT    |       |
-// |-------+-------+------------+------------+------------+-------|       |-----------+----------------+----------------+---------+-------------+-------|
-// |       |  LGUI |    LALT    |      LCTRL |     LSHIFT |       |       |      LEFT |           DOWN |             UP |   RIGHT | PRINTSCREEN |       |
-// |-------+-------+------------+------------+------------+-------|       |-----------+----------------+----------------+---------+-------------+-------|
-// |       |       | PREV_TRACK | PLAY/PAUSE | NEXT_TRACK |       |       |      HOME |      PREV_WORD |      NEXT_WORD |     END |             |       |
-// '----------------------------+------------+------------+-------|       |-----------+----------------+----------------+-------------------------------'
-//                              |            |            |       |       |           |                |                |
-//                              '------------+------------+-------'       '-----------+----------------+----------------'
+            // .--------------------------------------------------------------.       .-----------------------------------------------------------------------------.
+            // |       |       |       VOL- |      MUTE  |     VOL+   |       |       | PAGE_DOWN | WORKSPACE_PREV | WORKSPACE_NEXT | PAGE_UP |   INSERT    |       |
+            // |-------+-------+------------+------------+------------+-------|       |-----------+----------------+----------------+---------+-------------+-------|
+            // |       |  LGUI |    LALT    |      LCTRL |     LSHIFT |       |       |      LEFT |           DOWN |             UP |   RIGHT | PRINTSCREEN |       |
+            // |-------+-------+------------+------------+------------+-------|       |-----------+----------------+----------------+---------+-------------+-------|
+            // |       |       | PREV_TRACK | PLAY/PAUSE | NEXT_TRACK |       |       |      HOME |      PREV_WORD |      NEXT_WORD |     END |             |       |
+            // '----------------------------+------------+------------+-------|       |-----------+----------------+----------------+-------------------------------'
+            //                              |            |            |       |       |           |                |                |
+            //                              '------------+------------+-------'       '-----------+----------------+----------------'
+
             bindings = <
-&none  &none     &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &none     &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
-&none  &kp LGUI  &kp LALT           &kp LCTRL         &kp LSHFT        &none     &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
-&none  &none     &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT       &none     &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
-                                    &trans            &trans           &trans    &trans          &trans            &trans
+&none  &switch_lng  &kp C_VOLUME_DOWN  &kp C_MUTE       &kp C_VOLUME_UP     &kp LA(SPACE)    &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
+&none  &kp LGUI     &hrm LALT C_PREV   &hrm LCTRL C_PP  &hrm LSHIFT C_NEXT  &kp LG(TAB)      &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
+&none  &kp LC(Z)    &kp LC(X)          &kp LC(INS)      &kp LS(INS)         &none            &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
+                                       &trans           &trans              &trans           &trans          &kp BACKSPACE     &trans
             >;
         };
 
         symbols {
-// .-----------------------------------------------.       .-----------------------------------------------.
-// |       |   ^   |   {   |   +   |   }   |   $   |       |       |   %   |   *   |   #   |   ~   |       |
-// |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
-// |       |   `   |   [   |   =   |   ]   |   "   |       |  "|"  |   (   |   '   |   )   |   \   |       |
-// |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
-// |       |   _   |   !   |   &   |   -   |   @   |       |       |   =>  |   <   |   >   |   ?   |       |
-// '-----------------------+-------+-------+-------|       |-------+-------+-------+-----------------------'
-//                         |       |       |       |       |       |       |       |
-//                         '-------+-------+-------'       '-------+-------+-------'
+            // .-----------------------------------------------.       .-----------------------------------------------.
+            // |       |   ^   |   {   |   +   |   }   |   $   |       |       |   %   |   *   |   #   |   ~   |       |
+            // |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
+            // |       |   `   |   [   |   =   |   ]   |   "   |       |  "|"  |   (   |   '   |   )   |   \   |       |
+            // |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
+            // |       |   _   |   !   |   &   |   -   |   @   |       |       |   =>  |   <   |   >   |   ?   |       |
+            // '-----------------------+-------+-------+-------|       |-------+-------+-------+-----------------------'
+            //                         |       |       |       |       |       |       |       |
+            //                         '-------+-------+-------'       '-------+-------+-------'
+
             bindings = <
-&none  &kp CARET       &kp LEFT_BRACE    &kp PLUS       &kp RIGHT_BRACE    &kp DOLLAR           &none     &kp PERCENT           &kp ASTERISK   &kp HASH               &kp TILDE      &none
-&none  &kp GRAVE       &kp LEFT_BRACKET  &kp EQUAL      &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES    &kp PIPE  &kp LEFT_PARENTHESIS  &kp SQT        &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &none
-&none  &kp UNDERSCORE  &kp EXCLAMATION   &kp AMPERSAND  &kp MINUS          &kp AT_SIGN          &none     &arrow_fn             &kp LESS_THAN  &kp GREATER_THAN       &kp QUESTION   &none
+&none  &kp CARET       &kp LEFT_BRACE    &kp PLUS       &kp RIGHT_BRACE    &kp DOLLAR           &kp PIPE  &kp PERCENT           &kp ASTERISK   &kp HASH               &kp TILDE     &none
+&none  &kp GRAVE       &kp LEFT_BRACKET  &kp EQUAL      &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES    &kp BSLH  &kp LEFT_PARENTHESIS  &kp SQT        &kp RIGHT_PARENTHESIS  &kp COLON     &none
+&none  &kp UNDERSCORE  &kp EXCLAMATION   &kp AMPERSAND  &kp MINUS          &kp AT_SIGN          &none     &arrow_fn             &kp LESS_THAN  &kp GREATER_THAN       &kp QUESTION  &none
                                          &trans         &trans             &trans               &trans    &trans                &trans
             >;
         };
 
         number {
-// .-----------------------------------------------.       .-----------------------------------------------.
-// |       |  F10  |   F7  |   F8  |   F9  |   %   |       |   *   |   7   |   8   |   9   |   /   |       |
-// |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
-// |       |  F11  |   F4  |   F5  |   F6  |   =   |       |   +   |   4   |   5   |   6   |   -   |       |
-// |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
-// |       |  F12  |   F1  |   F2  |   F3  |       |       |   0   |   1   |   2   |   3   |   .   |       |
-// '-----------------------+-------+-------+-------|       |-------+-------+-------+-----------------------'
-//                         |       |       |       |       |       |       |       |
-//                         '-------+-------+-------'       '-------+-------+-------'
+            // .-----------------------------------------------.       .-----------------------------------------------.
+            // |       |  F10  |   F7  |   F8  |   F9  |   %   |       |   *   |   7   |   8   |   9   |   /   |       |
+            // |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
+            // |       |  F11  |   F4  |   F5  |   F6  |   =   |       |   +   |   4   |   5   |   6   |   -   |       |
+            // |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
+            // |       |  F12  |   F1  |   F2  |   F3  |       |       |   0   |   1   |   2   |   3   |   .   |       |
+            // '-----------------------+-------+-------+-------|       |-------+-------+-------+-----------------------'
+            //                         |       |       |       |       |       |       |       |
+            //                         '-------+-------+-------'       '-------+-------+-------'
+
             bindings = <
-&none  &kp F10  &kp F7  &kp F8  &kp F9  &kp PERCENT    &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp FSLH   &none
-&none  &kp F11  &kp F4  &kp F5  &kp F6  &kp EQUAL      &kp PLUS      &kp N4  &kp N5  &kp N6  &kp MINUS  &none
-&none  &kp F12  &kp F1  &kp F2  &kp F3  &none          &kp N0        &kp N1  &kp N2  &kp N3  &kp DOT    &none
-                        &trans  &trans  &trans         &trans        &trans  &trans
+&none  &kp F10        &kp F7        &kp F8         &kp F9          &none     &kp ASTERISK  &kp N7                    &kp N8               &kp N9              &kp FSLH             &none
+&none  &hrm LGUI F11  &hrm LALT F4  &hrm LCTRL F5  &hrm LSHIFT F6  &none     &kp PLUS      &hrm LEFT_SHIFT NUMBER_4  &hrm LCTRL NUMBER_5  &hrm LALT NUMBER_6  &hrm LMETA NUMBER_0  &none
+&none  &kp F12        &kp F1        &kp F2         &kp F3          &none     &kp MINUS     &kp N1                    &kp N2               &kp N3              &kp DOT              &none
+                                    &trans         &trans          &trans    &trans        &trans                    &trans
             >;
         };
 
-        additional {
-// .-----------------------------------------------------------.       .-----------------------------------------------------.
-// |       |           |           |           |       |       |       | BT_CLR |       |       |       |       | BT_CLR_ALL |
-// |-------+-----------+-----------+-----------+-------+-------|       |--------+-------+-------+-------+-------+------------|
-// |       | RMB_CLICK | MMB_CLICK | LMB_CLICK |       |       |       |  BT3   | BT0   | BT2   | BT3   | BT4   |            |
-// |-------+-----------+-----------+-----------+-------+-------|       |--------+-------+-------+-------+-------+------------|
-// |       |           |           |           |       |       |       |        |       |       |       |       |            |
-// '-------------------------------+-----------+-------+-------|       |--------+-------+-------+----------------------------'
-//                                 |           |       |       |       |        |       |       |
-//                                 '-----------+-------+-------'       '--------+-------+-------'
+        bluetooth {
+            // .-----------------------------------------------------------.       .-----------------------------------------------------.
+            // |       |           |           |           |       |       |       | BT_CLR |       |       |       |       | BT_CLR_ALL |
+            // |-------+-----------+-----------+-----------+-------+-------|       |--------+-------+-------+-------+-------+------------|
+            // |       | RMB_CLICK | MMB_CLICK | LMB_CLICK |       |       |       |  BT3   | BT0   | BT1   | BT2   | BT4   |            |
+            // |-------+-----------+-----------+-----------+-------+-------|       |--------+-------+-------+-------+-------+------------|
+            // |       |           |           |           |       |       |       |        |       |       |       |       |            |
+            // '-------------------------------+-----------+-------+-------|       |--------+-------+-------+----------------------------'
+            //                                 |           |       |       |       |        |       |       |
+            //                                 '-----------+-------+-------'       '--------+-------+-------'
+
             bindings = <
-&none  &none  &none      &none      &none      &none     &bt BT_CLR    &none         &none         &none         &none         &bt BT_CLR_ALL
-&none  &none  &mkp RCLK  &mkp MCLK  &mkp LCLK  &none     &bt BT_SEL 3  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4  &none
-&none  &none  &none      &none      &none      &none     &none         &none         &none         &none         &none         &none
-                         &trans     &trans     &trans    &trans        &trans        &trans
+&none  &none           &none  &none   &none       &none     &none         &none         &none         &none         &none         &none
+&none  &bt BT_CLR_ALL  &none  &none   &bt BT_CLR  &none     &bt BT_SEL 3  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4  &none
+&none  &none           &none  &none   &none       &none     &none         &none         &none         &none         &none         &none
+                              &trans  &trans      &trans    &trans        &trans        &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp MB3  &mkp MB2  &mkp MB1    &trans  &trans  &trans
             >;
         };
     };
