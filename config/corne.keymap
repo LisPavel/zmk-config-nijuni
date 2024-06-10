@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 
 / {
     behaviors {
@@ -199,12 +198,12 @@
             >;
         };
 
-        mouse {
+        vim {
             bindings = <
-&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans             &trans           &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans    &trans      &trans  &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans             &trans           &trans  &trans  &trans
-                        &mkp MB3  &mkp MB2  &mkp MB1    &trans  &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp H   &kp J   &kp K   &kp L   &kp SEMI  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
