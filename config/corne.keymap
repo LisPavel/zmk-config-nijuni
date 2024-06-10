@@ -201,10 +201,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp MB3  &mkp MB2  &mkp MB1    &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans             &trans           &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans      &trans  &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans             &trans           &trans  &trans  &trans
+                        &mkp MB3  &mkp MB2  &mkp MB1    &trans  &trans             &trans
             >;
         };
     };
