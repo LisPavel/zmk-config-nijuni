@@ -91,12 +91,12 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <2 3>;
+            key-positions = <1 2>;
         };
 
         combo_del {
             bindings = <&kp DEL>;
-            key-positions = <8 9>;
+            key-positions = <9 10>;
         };
     };
 
