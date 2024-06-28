@@ -1,4 +1,13 @@
-on: [push, pull_request, workflow_dispatch]
+# on: [push, pull_request, workflow_dispatch]
+on: 
+  workflow_dispatch: # can be triggered manually
+  push:
+    paths:
+      - 'build.yaml'
+      - 'config/*.keymap'
+      - 'config/*.conf'
+      - 'config/*.dtsi'
+      - 'config/west.yaml'
 
 jobs:
   build:
