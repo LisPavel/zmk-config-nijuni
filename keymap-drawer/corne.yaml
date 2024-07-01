@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
-  base:
+  L0:
   - ''
   - Q
   - W
@@ -17,10 +17,10 @@ layers:
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: S, h: LAlt}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: navigation}
+  - {t: F, h: L1}
   - G
   - H
-  - {t: J, h: navigation}
+  - {t: J, h: L1}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RAlt}
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
@@ -38,12 +38,12 @@ layers:
   - /
   - ''
   - ''
-  - {t: '$$mdi:keyboard-tab$$', h: number}
+  - {t: '$$mdi:keyboard-tab$$', h: L3}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:backspace$$', h: symbols}
+  - {t: '$$mdi:backspace$$', h: L2}
   - ''
-  navigation:
+  L1:
   - ''
   - {t: '$$mdi:translate$$', h: Lang Switch}
   - $$mdi:volume-medium$$
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  symbols:
+  L2:
   - ''
   - ^
   - '{'
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  number:
+  L3:
   - ''
   - F10
   - F7
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  bluetooth:
+  L4:
   - ''
   - ''
   - ''
@@ -218,19 +218,19 @@ layers:
 combos:
 - p: [38, 39]
   k: {t: '$$mdi:caps-lock$$', h: Caps Word}
-  l: [base]
+  l: [L0]
 - p: [1, 2]
   k: ESC
-  l: [base]
+  l: [L0]
 - p: [9, 10]
   k: $$mdi:backspace-reverse$$
-  l: [base]
+  l: [L0]
 - p: [21, 20]
   k: ']'
-  l: [base]
+  l: [L0]
 - p: [14, 15]
   k: '['
-  l: [base]
+  l: [L0]
 - p: [7, 8]
   k: ''''
-  l: [base]
+  l: [L0]
