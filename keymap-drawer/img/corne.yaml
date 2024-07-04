@@ -73,7 +73,7 @@ layers:
   - {t: '$$mdi:content-cut$$', h: Cut}
   - {t: '$$mdi:content-copy$$', h: Copy}
   - {t: '$$mdi:content-paste$$', h: Paste}
-  - ''
+  - Ctl + Y
   - HOME
   - Prev Word
   - Next Word

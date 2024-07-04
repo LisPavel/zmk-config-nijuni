@@ -156,7 +156,7 @@
             bindings = <
 &none  &switch_lng  &kp C_VOLUME_DOWN  &kp C_MUTE       &kp C_VOLUME_UP     &kp LA(SPACE)    &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
 &none  &kp LGUI     &hrm LALT C_PREV   &hrm LCTRL C_PP  &hrm LSHIFT C_NEXT  &kp LG(TAB)      &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
-&none  &kp LC(Z)    &kp LC(X)          &kp LC(INS)      &kp LS(INS)         &none            &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
+&none  &kp LC(Z)    &kp LC(X)          &kp LC(INS)      &kp LS(INS)         &kp LC(Y)        &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
                                        &trans           &trans              &trans           &trans          &trans            &trans
             >;
         };
