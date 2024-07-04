@@ -47,6 +47,7 @@ parse_config:
     '&kp LC(LG(LEFT))': Prev Desk
     '&kp LC(LG(RIGHT))': Next Desk
     '&kp LC(Z)': {t: $$mdi:undo$$, h: Undo}
+    '&kp LC(Y)': {t: $$mdi:redo$$, h: Redo}
     '&kp LC(X)': {t: $$mdi:content-cut$$, h: Cut}
     '&kp LC(INS)': {t: $$mdi:content-copy$$, h: Copy}      
     '&kp LS(INS)': {t: $$mdi:content-paste$$, h: Paste}
