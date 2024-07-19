@@ -215,6 +215,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
+  mouse: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '&mmv MOVE_LEFT', '&mmv MOVE_DOWN', '&mmv MOVE_UP', '&mmv MOVE_RIGHT', '', '', '',
+    '', '', '', '', '', '&msc MOVE_LEFT', '&msc MOVE_DOWN', '&msc MOVE_UP', '&msc MOVE_RIGHT', '', '', '', '', '', '', '', '']
 combos:
 - p: [38, 39]
   k: {t: '$$mdi:caps-lock$$', h: Caps Word}

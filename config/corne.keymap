@@ -217,6 +217,15 @@
                               &trans  &trans      &trans    &trans        &trans        &trans
             >;
         };
+
+        mouse {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none           &none           &none         &none            &none  &none
+&none  &none  &none  &none  &none  &none    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
+&none  &none  &none  &none  &none  &none    &msc MOVE_LEFT  &msc MOVE_DOWN  &msc MOVE_UP  &msc MOVE_RIGHT  &none  &none
+                     &none  &none  &none    &none           &none           &none
+            >;
+        };
     };
 
     conditional_layers {
