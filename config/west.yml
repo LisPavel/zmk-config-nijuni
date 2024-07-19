@@ -4,12 +4,14 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: krikun98
       url-base: https://github.com/krikun98
+    - name: urob
+      url-base: https://github.com/urob
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
-      remote: krikun98
-      revision: mouse-pr
+      remote: urob
+      revision: main
       import: app/west.yml
   self:
     path: config
