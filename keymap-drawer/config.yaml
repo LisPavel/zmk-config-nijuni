@@ -51,19 +51,19 @@ parse_config:
     '&kp LC(X)': {t: $$mdi:content-cut$$, h: Cut}
     '&kp LC(INS)': {t: $$mdi:content-copy$$, h: Copy}      
     '&kp LS(INS)': {t: $$mdi:content-paste$$, h: Paste}
+    '&kp LA(SPACE)': (K)Runner
+    '&kp LG(TAB)': Desk Overview
     '&mkp MB1': {t: $$mdi:mouse-left-click$$}
     '&mkp MB2': {t: $$mdi:mouse-right-click$$}
     '&mkp MB3': {t: $$mdi:mouse-scroll-wheel$$}
-    '&mmv MOVE_LEFT': {t: $$chevron-left$$, h: $$mouse$$}
-    '&mmv MOVE_RIGHT': {t: $$chevron-right$$, h: $$mouse$$}
-    '&mmv MOVE_UP': {t: $$chevron-up$$, h: $$mouse$$}
-    '&mmv MOVE_DOWN': {t: $$chevron-down$$, h: $$mouse$$}
-    '&msc SCRL_LEFT': {t: $$chevron-double-left$$, h: $$mouse$$}
-    '&msc SCRL_RIGHT': {t: $$chevron-double-right$$, h: $$mouse$$}
-    '&msc SCRL_UP': {t: $$chevron-double-up$$, h: $$mouse$$}
-    '&msc SCRL_DOWN': {t: $$chevron-double-down$$, h: $$mouse$$}
-    '&kp LA(SPACE)': (K)Runner
-    '&kp LG(TAB)': Desk Overview
+    '&mmv MOVE_LEFT': {t: $$mdi:chevron-left$$, h: $$mdi:mouse$$}
+    '&mmv MOVE_RIGHT': {t: $$mdi:chevron-right$$, h: $$mdi:mouse$$}
+    '&mmv MOVE_UP': {t: $$mdi:chevron-up$$, h: $$mdi:mouse$$}
+    '&mmv MOVE_DOWN': {t: $$mdi:chevron-down$$, h: $$mdi:mouse$$}
+    '&msc SCRL_LEFT': {t: $$mdi:chevron-double-left$$, h: $$mdi:mouse$$}
+    '&msc SCRL_RIGHT': {t: $$mdi:chevron-double-right$$, h: $$mdi:mouse$$}
+    '&msc SCRL_UP': {t: $$mdi:chevron-double-up$$, h: $$mdi:mouse$$}
+    '&msc SCRL_DOWN': {t: $$mdi:chevron-double-down$$, h: $$mdi:mouse$$}
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle

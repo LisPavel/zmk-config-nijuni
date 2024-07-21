@@ -234,10 +234,10 @@ layers:
   - ''
   - ''
   - ''
-  - {t: $$chevron-left$$, h: $$mouse$$}
-  - {t: $$chevron-down$$, h: $$mouse$$}
-  - {t: $$chevron-up$$, h: $$mouse$$}
-  - {t: $$chevron-right$$, h: $$mouse$$}
+  - {t: '$$mdi:chevron-left$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-down$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-up$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-right$$', h: '$$mdi:mouse$$'}
   - ''
   - ''
   - ''
@@ -246,10 +246,10 @@ layers:
   - ''
   - ''
   - ''
-  - {t: $$chevron-double-left$$, h: $$mouse$$}
-  - {t: $$chevron-double-up$$, h: $$mouse$$}
-  - {t: $$chevron-double-down$$, h: $$mouse$$}
-  - {t: $$chevron-double-right$$, h: $$mouse$$}
+  - {t: '$$mdi:chevron-double-left$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-up$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-down$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-right$$', h: '$$mdi:mouse$$'}
   - ''
   - ''
   - ''
