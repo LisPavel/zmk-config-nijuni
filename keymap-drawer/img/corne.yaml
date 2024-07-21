@@ -234,7 +234,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&mmv MOVE_LEFT'
+  - {t: '$$mdi:menu-left$$', h: '$$mdi:mouse$$'}
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
