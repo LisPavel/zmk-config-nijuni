@@ -26,7 +26,7 @@ layers:
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
   - ''
   - ''
-  - Z
+  - {t: Z, h: mouse}
   - X
   - C
   - V
@@ -215,6 +215,49 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
+  mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: $$chevron-left$$, h: $$mouse$$}
+  - {t: $$chevron-down$$, h: $$mouse$$}
+  - {t: $$chevron-up$$, h: $$mouse$$}
+  - {t: $$chevron-right$$, h: $$mouse$$}
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: $$chevron-double-left$$, h: $$mouse$$}
+  - {t: $$chevron-double-up$$, h: $$mouse$$}
+  - {t: $$chevron-double-down$$, h: $$mouse$$}
+  - {t: $$chevron-double-right$$, h: $$mouse$$}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-scroll-wheel$$
 combos:
 - p: [38, 39]
   k: {t: '$$mdi:caps-lock$$', h: Caps Word}
