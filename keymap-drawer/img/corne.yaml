@@ -230,9 +230,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - LAlt
+  - $$mdi:apple-keyboard-control$$
+  - LSHFT
   - ''
   - {t: '$$mdi:chevron-left$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:chevron-down$$', h: '$$mdi:mouse$$'}
