@@ -252,9 +252,9 @@ layers:
   - {t: '$$mdi:chevron-double-right$$', h: '$$mdi:mouse$$'}
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-left-click$$
   - $$mdi:mouse-left-click$$
   - $$mdi:mouse-right-click$$
   - $$mdi:mouse-scroll-wheel$$
