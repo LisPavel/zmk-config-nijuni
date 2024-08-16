@@ -20,7 +20,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <170>;
-            quick-tap-ms = <210>;
+            quick-tap-ms = <200>;
             flavor = "balanced";
         };
 
@@ -31,7 +31,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <170>;
-            quick-tap-ms = <210>;
+            quick-tap-ms = <200>;
             flavor = "balanced";
         };
 
@@ -94,13 +94,13 @@
 
         c_esc {
             bindings = <&kp ESC>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             layers = <0>;
         };
 
         c_del {
             bindings = <&kp DEL>;
-            key-positions = <9 10>;
+            key-positions = <9 8>;
             layers = <0>;
         };
 
@@ -120,6 +120,11 @@
             bindings = <&kp SQT>;
             key-positions = <7 8>;
             layers = <0>;
+        };
+
+        c-tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <3 4>;
         };
     };
 

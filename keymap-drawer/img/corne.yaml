@@ -262,10 +262,10 @@ combos:
 - p: [38, 39]
   k: {t: '$$mdi:caps-lock$$', h: Caps Word}
   l: [L0]
-- p: [1, 2]
+- p: [2, 3]
   k: ESC
   l: [L0]
-- p: [9, 10]
+- p: [9, 8]
   k: $$mdi:backspace-reverse$$
   l: [L0]
 - p: [21, 20]
@@ -277,3 +277,5 @@ combos:
 - p: [7, 8]
   k: ''''
   l: [L0]
+- p: [3, 4]
+  k: '~'
