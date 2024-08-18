@@ -125,6 +125,7 @@
         c-tilde {
             bindings = <&kp TILDE>;
             key-positions = <3 4>;
+            layers = <0>;
         };
     };
 
