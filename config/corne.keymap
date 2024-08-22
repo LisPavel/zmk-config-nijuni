@@ -5,6 +5,7 @@
  */
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200
+// #define ZMK_MOUSE_DEFAULT_SCRL_VAL 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
