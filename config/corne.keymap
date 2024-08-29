@@ -144,8 +144,8 @@
             layers = <0>;
         };
 
-        c-tilde {
-            bindings = <&kp TILDE>;
+        c_grave {
+            bindings = <&kp GRAVE>;
             key-positions = <3 4>;
             layers = <0>;
         };
