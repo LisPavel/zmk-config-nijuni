@@ -260,11 +260,11 @@ layers:
   - $$mdi:mouse-scroll-wheel$$
   media:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:menu-down$$
   - VOL DN
   - $$mdi:volume-mute$$
   - VOL UP
-  - {t: ▽, type: trans}
+  - $$mdi:menu-up$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -285,9 +285,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
-  - RW
+  - $$mdi:menu-left$$
   - {t: ▽, type: trans}
-  - FF
+  - $$mdi:menu-right$$
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
