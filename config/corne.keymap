@@ -43,6 +43,26 @@
             #binding-cells = <0>;
             bindings = <&switch_lng_meta_spc>, <&switch_lng_shft_alt>;
         };
+
+        hrm_no_qt: hrm_no_qt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_NO_QT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "balanced";
+        };
+
+        hrl_no_qt: hrl_no_qt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRL_NO_QT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "balanced";
+        };
     };
 
     macros {
