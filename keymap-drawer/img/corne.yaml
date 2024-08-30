@@ -84,7 +84,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:backspace$$
   - {t: ▽, type: trans}
   L2:
   - ''
