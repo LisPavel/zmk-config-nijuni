@@ -190,10 +190,10 @@
             //                                     '-----------+-----------+----------------'       '----------------+-----------------+-----------'
 
             bindings = <
-&none  &kp Q             &kp W             &kp E              &kp R            &kp T                     &kp Y                   &kp U                  &kp I              &kp O             &kp P                &none
-&none  &urob_hrm LGUI A  &urob_hrm LALT S  &urob_hrm LCTRL D  &urob_hrl 1 F    &kp G                     &kp H                   &urob_hrl 1 J          &urob_hrm RCTRL K  &urob_hrm RALT L  &hrm RGUI SEMICOLON  &none
-&none  &lt 5 Z           &kp X             &kp C              &kp V            &kp B                     &kp N                   &kp M                  &kp COMMA          &kp DOT           &kp FSLH             &none
-                                           &tog 6             &urob_hrl 3 TAB  &urob_hrm LSHIFT SPACE    &urob_hrm RSHIFT ENTER  &urob_hrl 2 BACKSPACE  &none
+&none  &kp Q             &kp W             &kp E              &kp R          &kp T               &kp Y             &kp U            &kp I              &kp O             &kp P                &none
+&none  &urob_hrm LGUI A  &urob_hrm LALT S  &urob_hrm LCTRL D  &urob_hrl 1 F  &kp G               &kp H             &urob_hrl 1 J    &urob_hrm RCTRL K  &urob_hrm RALT L  &hrm RGUI SEMICOLON  &none
+&none  &lt 5 Z           &kp X             &kp C              &kp V          &kp B               &kp N             &kp M            &kp COMMA          &kp DOT           &kp FSLH             &none
+                                           &tog 6             &lt 3 TAB      &mt LSHIFT SPACE    &mt RSHIFT ENTER  &lt 2 BACKSPACE  &none
             >;
         };
 
