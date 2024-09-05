@@ -106,6 +106,20 @@
 
             label = "SWITCH_LNG_SHFT_ALT";
         };
+
+        meta_space_ru_layer: meta_space_ru_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&switch_lng_meta_spc &to 1>;
+            label = "META_SPACE_RU_LAYER";
+        };
+
+        meta_space_en_layer: meta_space_en_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&switch_lng_meta_spc &to 0>;
+            label = "META_SPACE_EN_LAYER";
+        };
     };
 
     combos {
@@ -170,10 +184,10 @@
             //                                     '-----------+-----------+----------------'       '----------------+-----------------+-----------'
 
             bindings = <
-&none  &kp Q        &kp W        &kp E         &kp R      &kp T               &kp Y             &kp U            &kp I         &kp O        &kp P                &none
-&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 2 F   &kp G               &kp H             &hrl 2 J         &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
-&none  &lt 7 Z      &kp X        &kp C         &kp V      &kp B               &kp N             &kp M            &kp COMMA     &kp DOT      &kp FSLH             &none
-                                 &tog 8        &tl 3 TAB  &tm LSHIFT SPACE    &tm RSHIFT ENTER  &tl 4 BACKSPACE  &none
+&none                 &kp Q        &kp W        &kp E         &kp R      &kp T               &kp Y             &kp U            &kp I         &kp O        &kp P                &none
+&meta_space_en_layer  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 2 F   &kp G               &kp H             &hrl 2 J         &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &meta_space_ru_layer
+&none                 &lt 7 Z      &kp X        &kp C         &kp V      &kp B               &kp N             &kp M            &kp COMMA     &kp DOT      &kp FSLH             &none
+                                                &tog 8        &tl 3 TAB  &tm LSHIFT SPACE    &tm RSHIFT ENTER  &tl 4 BACKSPACE  &none
             >;
         };
 
