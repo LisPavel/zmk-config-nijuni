@@ -43,6 +43,49 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:backspace$$', h: symbols}
   - ''
+  ru_qwerty:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:backspace$$', h: ru_symbols}
+  - {t: ▽, type: trans}
   navigation:
   - ''
   - {t: '$$mdi:translate$$', h: Lang Switch}
@@ -85,6 +128,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:backspace$$
+  - {t: ▽, type: trans}
+  number_fn:
+  - ''
+  - F10
+  - F7
+  - F8
+  - F9
+  - ''
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - /
+  - ''
+  - ''
+  - {t: F11, h: '$$mdi:microsoft-windows$$'}
+  - {t: F4, h: LAlt}
+  - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-shift$$'}
+  - ''
+  - +
+  - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '6', h: LAlt}
+  - {t: '0', h: '$$mdi:microsoft-windows$$'}
+  - ''
+  - ''
+  - F12
+  - F1
+  - F2
+  - F3
+  - ''
+  - '-'
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   symbols:
   - ''
@@ -129,48 +215,48 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  number_fn:
-  - ''
-  - F10
-  - F7
-  - F8
-  - F9
-  - ''
-  - '*'
-  - '7'
-  - '8'
-  - '9'
-  - /
+  ru_symbols:
   - ''
   - ''
-  - {t: F11, h: '$$mdi:microsoft-windows$$'}
-  - {t: F4, h: LAlt}
-  - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F6, h: '$$mdi:apple-keyboard-shift$$'}
   - ''
   - +
-  - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '5', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '6', h: LAlt}
-  - {t: '0', h: '$$mdi:microsoft-windows$$'}
   - ''
   - ''
-  - F12
-  - F1
-  - F2
-  - F3
+  - ''
+  - '%'
+  - '*'
+  - '#'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '='
+  - ''
+  - '@'
+  - \
+  - (
+  - ^
+  - )
+  - $
+  - ''
+  - ''
+  - _
+  - '!'
   - ''
   - '-'
-  - '1'
-  - '2'
-  - '3'
-  - .
+  - ''
+  - '&'
+  - =>
+  - '?'
+  - /
+  - '|'
   - ''
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   bluetooth:
   - ''
