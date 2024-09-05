@@ -218,9 +218,9 @@ layers:
   ru_symbols:
   - ''
   - ''
-  - ''
+  - '&ru_lbkt'
   - +
-  - ''
+  - '&ru_rbkt'
   - ''
   - ''
   - '%'

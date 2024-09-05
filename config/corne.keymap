@@ -120,6 +120,32 @@
             bindings = <&switch_lng_meta_spc &to 0>;
             label = "META_SPACE_EN_LAYER";
         };
+
+        ru_lbkt: ru_l_brc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N9 &kp KP_N1>,
+                <&macro_release>;
+
+            label = "RU_L_BRC";
+        };
+
+        ru_rbkt: ru_r_brc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N9 &kp KP_N3>,
+                <&macro_release>;
+
+            label = "RU_R_BRC";
+        };
     };
 
     combos {
@@ -259,7 +285,7 @@
 
         ru_symbols {
             bindings = <
-&none  &none      &none     &kp PLUS   &none      &none     &none     &kp PRCNT  &kp STAR   &kp HASH  &none     &none
+&none  &none      &ru_lbkt  &kp PLUS   &ru_rbkt   &none     &none     &kp PRCNT  &kp STAR   &kp HASH  &none     &none
 &none  &none      &none     &kp EQUAL  &none      &kp AT    &kp BSLH  &kp LPAR   &kp CARET  &kp RPAR  &kp DLLR  &none
 &none  &kp UNDER  &kp EXCL  &none      &kp MINUS  &none     &kp AMPS  &arrow_fn  &kp QMARK  &kp FSLH  &kp PIPE  &none
                             &trans     &trans     &trans    &trans    &trans     &trans
@@ -307,7 +333,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        activate_additional {
+        mo_bluetooth {
             if-layers = <3 4>;
             then-layer = <6>;
         };
