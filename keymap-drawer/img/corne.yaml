@@ -390,22 +390,22 @@ layers:
 combos:
 - p: [38, 39]
   k: {t: '$$mdi:caps-lock$$', h: Caps Word}
-  l: [qwerty]
+  l: [qwerty, ru_qwerty]
 - p: [2, 3]
   k: ESC
-  l: [qwerty]
+  l: [qwerty, ru_qwerty]
 - p: [9, 8]
   k: $$mdi:backspace-reverse$$
-  l: [qwerty]
+  l: [qwerty, ru_qwerty]
 - p: [21, 20]
   k: ']'
-  l: [qwerty]
+  l: [qwerty, ru_qwerty]
 - p: [14, 15]
   k: '['
-  l: [qwerty]
+  l: [qwerty, ru_qwerty]
 - p: [7, 8]
   k: ''''
-  l: [qwerty]
+  l: [qwerty, ru_qwerty]
 - p: [3, 4]
   k: '`'
-  l: [qwerty]
+  l: [qwerty, ru_qwerty]

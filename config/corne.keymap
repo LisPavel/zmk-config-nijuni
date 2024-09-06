@@ -156,44 +156,44 @@
         c_capswords {
             bindings = <&caps_word>;
             key-positions = <38 39>;
-            layers = <0>;
+            layers = <0 1>;
             timeout-ms = <50>;
         };
 
         c_esc {
             bindings = <&kp ESC>;
             key-positions = <2 3>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         c_del {
             bindings = <&kp DEL>;
             key-positions = <9 8>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         c-r-bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <21 20>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         c-l-bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <14 15>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         c-semicolon {
             bindings = <&kp SQT>;
             key-positions = <7 8>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         c_grave {
             bindings = <&kp GRAVE>;
             key-positions = <3 4>;
-            layers = <0>;
+            layers = <0 1>;
         };
     };
 
