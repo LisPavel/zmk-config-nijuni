@@ -124,29 +124,15 @@
         ru_lbkt: ru_l_brc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N9 &kp KP_N1>,
-                <&macro_release>,
-                <&kp LG(LALT)>;
-
+            bindings = <&switch_lng_meta_spc &kp LBKT &switch_lng_meta_spc>;
             label = "RU_L_BRC";
         };
 
-        ru_rbkt: ru_r_brc {
+        ru_rbkt: ru_rbkt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N9 &kp KP_N3>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "RU_R_BRC";
+            bindings = <&switch_lng_meta_spc &kp RBKT &switch_lng_meta_spc>;
+            label = "RU_RBKT";
         };
     };
 
