@@ -208,10 +208,10 @@
             //                         '-------+-------+-------'       '-------+-------+-------'
 
             bindings = <
-&none  &kp CARET       &kp LBKT         &kp PLUS       &kp RBKT   &kp DOLLAR           &kp PIPE   &kp LT                &kp FSLH  &kp GT                 &kp GRAVE  &none
-&none  &arrow_fn       &kp LBRC         &kp EQUAL      &kp RBRC   &kp DOUBLE_QUOTES    &kp BSLH   &kp LEFT_PARENTHESIS  &kp SQT   &kp RIGHT_PARENTHESIS  &kp COLON  &none
-&none  &kp UNDERSCORE  &kp EXCLAMATION  &kp AMPERSAND  &kp MINUS  &kp AT_SIGN          &kp TILDE  &kp PRCNT             &kp STAR  &kp HASH               &kp QMARK  &none
-                                        &trans         &trans     &trans               &trans     &trans                &trans
+&none  &kp EXCL   &kp LT     &kp EQUAL  &kp FSLH   &kp CARET            &kp DLLR   &kp BSLH  &kp PLUS  &kp GT     &kp QMARK  &none
+&none  &kp COLON  &kp LBKT   &kp LBRC   &kp LPAR   &kp DOUBLE_QUOTES    &kp SQT    &kp RPAR  &kp RBRC  &kp RBKT   &kp SEMI   &none
+&none  &kp HASH   &kp UNDER  &kp AMPS   &kp MINUS  &kp AT_SIGN          &kp TILDE  &kp STAR  &kp PIPE  &kp GRAVE  &kp PRCNT  &none
+                             &trans     &trans     &trans               &trans     &trans    &trans
             >;
         };
 
