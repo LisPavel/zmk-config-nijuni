@@ -276,7 +276,12 @@
         compatible = "zmk,conditional-layers";
 
         activate_additional {
-            if-layers = <2 3>;
+            if-layers = <1 2>;
+            then-layer = <4>;
+        };
+
+        layer_bluetooth {
+            if-layers = <1 3>;
             then-layer = <4>;
         };
     };
