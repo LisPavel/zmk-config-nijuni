@@ -273,10 +273,10 @@
 
         ru_symbols {
             bindings = <
-&none  &none      &ru_lbkt  &kp PLUS   &ru_rbkt   &none     &none     &kp PRCNT  &kp STAR   &kp HASH  &none     &none
-&none  &none      &none     &kp EQUAL  &none      &kp AT    &kp BSLH  &kp LPAR   &kp CARET  &kp RPAR  &kp DLLR  &none
-&none  &kp UNDER  &kp EXCL  &none      &kp MINUS  &none     &kp AMPS  &arrow_fn  &kp QMARK  &kp FSLH  &kp PIPE  &none
-                            &trans     &trans     &trans    &trans    &trans     &trans
+&none  &kp EXCL   &none      &kp EQUAL  &kp PIPE   &none     &none     &kp BSLH  &kp PLUS  &none  &kp AMPS   &none
+&none  &kp CARET  &none      &none      &kp LPAR   &kp AT    &none     &kp RPAR  &none     &none  &kp DLLR   &none
+&none  &none      &kp UNDER  &none      &kp MINUS  &none     &kp HASH  &kp STAR  &none     &none  &kp PRCNT  &none
+                             &trans     &trans     &trans    &trans    &trans    &trans
             >;
         };
 
