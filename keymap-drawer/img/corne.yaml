@@ -17,10 +17,10 @@ layers:
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: S, h: LAlt}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: navigation}
+  - F
   - G
   - H
-  - {t: J, h: navigation}
+  - J
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RAlt}
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
@@ -78,7 +78,7 @@ layers:
   - '*'
   - '|'
   - '`'
-  - {t: mouse, h: toggle}
+  - {t: navigation, h: toggle}
   - ''
   - ''
   - {t: qwerty, h: toggle}
@@ -131,11 +131,11 @@ layers:
   - {t: ▽, type: trans}
   navigation:
   - ''
-  - {t: '$$mdi:translate$$', h: Lang Switch}
+  - ''
   - $$mdi:volume-medium$$
   - $$mdi:volume-mute$$
   - $$mdi:volume-high$$
-  - (K)Runner
+  - BRI UP
   - PAGE DOWN
   - Prev Desk
   - Next Desk
@@ -143,11 +143,11 @@ layers:
   - INSERT
   - ''
   - ''
-  - $$mdi:microsoft-windows$$
-  - {t: '$$mdi:skip-previous$$', h: LAlt}
-  - {t: '$$mdi:play-pause$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:skip-next$$', h: '$$mdi:apple-keyboard-shift$$', type: held}
-  - Desk Overview
+  - {t: '$$mdi:microsoft-windows$$', h: sticky}
+  - {t: LAlt, h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - BRI DEC
   - $$mdi:menu-left$$
   - $$mdi:menu-down$$
   - $$mdi:menu-up$$
@@ -155,22 +155,22 @@ layers:
   - PRINTSCREEN
   - ''
   - ''
-  - {t: '$$mdi:undo$$', h: Undo}
-  - {t: '$$mdi:content-cut$$', h: Cut}
-  - {t: '$$mdi:content-copy$$', h: Copy}
-  - {t: '$$mdi:content-paste$$', h: Paste}
-  - {t: '$$mdi:redo$$', h: Redo}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - HOME
   - Prev Word
   - Next Word
   - END
+  - {t: mouse, h: toggle}
   - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: qwerty, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:backspace$$
+  - {t: symbols, h: toggle}
   - {t: ▽, type: trans}
   bluetooth:
   - ''
@@ -189,7 +189,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - ''
   - {t: BT, h: '3'}
   - {t: BT, h: '0'}

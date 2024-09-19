@@ -180,10 +180,10 @@
             //                                     '-----------+-----------+----------------'       '----------------+-----------------+-----------'
 
             bindings = <
-&none  &kp Q        &kp W        &kp E         &kp R      &kp T          &kp Y     &kp U     &kp I         &kp O        &kp P                &none
-&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 3 F   &kp G          &kp H     &hrl 3 J  &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
-&none  &kp Z        &kp X        &kp C         &kp V      &kp B          &kp N     &kp M     &kp COMMA     &kp DOT      &kp FSLH             &none
-                                 &none         &kp SPACE  &osm LSHIFT    &kp BSPC  &to 1     &none
+&none  &kp Q        &kp W        &kp E         &kp R      &kp T          &kp Y     &kp U  &kp I         &kp O        &kp P                &none
+&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &kp F      &kp G          &kp H     &kp J  &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
+&none  &kp Z        &kp X        &kp C         &kp V      &kp B          &kp N     &kp M  &kp COMMA     &kp DOT      &kp FSLH             &none
+                                 &none         &kp SPACE  &osm LSHIFT    &kp BSPC  &to 1  &none
             >;
         };
 
@@ -201,7 +201,7 @@
             bindings = <
 &none  &kp EXCL   &kp LT     &kp EQUAL  &kp FSLH   &kp CARET            &kp DLLR   &kp BSLH  &kp PLUS  &kp GT     &kp QMARK        &none
 &none  &kp PRCNT  &kp LBKT   &kp LBRC   &kp LPAR   &kp DOUBLE_QUOTES    &kp SQT    &kp RPAR  &kp RBRC  &kp RBKT   &hrm SEMI COLON  &none
-&none  &kp HASH   &kp UNDER  &kp AMPS   &kp MINUS  &kp AT_SIGN          &kp TILDE  &kp STAR  &kp PIPE  &kp GRAVE  &to 5            &none
+&none  &kp HASH   &kp UNDER  &kp AMPS   &kp MINUS  &kp AT_SIGN          &kp TILDE  &kp STAR  &kp PIPE  &kp GRAVE  &to 3            &none
                              &none      &to 0      &trans               &trans     &to 2     &none
             >;
         };
@@ -237,10 +237,10 @@
             //                              '------------+------------+-------'       '-----------+----------------+----------------'
 
             bindings = <
-&none  &switch_lng  &kp C_VOLUME_DOWN  &kp C_MUTE       &kp C_VOLUME_UP     &kp LA(SPACE)    &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
-&none  &kp LGUI     &hrm LALT C_PREV   &hrm LCTRL C_PP  &hrm LSHIFT C_NEXT  &kp LG(TAB)      &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
-&none  &kp LC(Z)    &kp LC(X)          &kp LC(INS)      &kp LS(INS)         &kp LC(Y)        &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
-                                       &trans           &trans              &trans           &trans          &kp BSPC          &trans
+&none  &none      &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &kp C_BRI_UP     &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
+&none  &osm LGUI  &osm LALT          &osm LCTRL  &osm LSHIFT      &kp C_BRI_DEC    &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
+&none  &none      &none              &none       &none            &none            &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &to 5            &none
+                                     &trans      &to 0            &trans           &trans          &to 1             &trans
             >;
         };
 
