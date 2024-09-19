@@ -67,6 +67,16 @@
             flavor = "balanced";
             quick-tap-ms = <170>;
         };
+
+        osm: osm {
+            compatible = "zmk,behavior-sticky-key";
+            label = "OSM";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            ignore-modifiers;
+            quick-release;
+        };
     };
 
     macros {
@@ -171,28 +181,9 @@
 
             bindings = <
 &none  &kp Q        &kp W        &kp E         &kp R      &kp T               &kp Y             &kp U            &kp I         &kp O        &kp P                &none
-&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F   &kp G               &kp H             &hrl 1 J         &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
+&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 3 F   &kp G               &kp H             &hrl 3 J         &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
 &none  &lt 5 Z      &kp X        &kp C         &kp V      &kp B               &kp N             &kp M            &kp COMMA     &kp DOT      &kp FSLH             &none
-                                 &tog 6        &tl 3 TAB  &tm LSHIFT SPACE    &tm RSHIFT ENTER  &tl 2 BACKSPACE  &none
-            >;
-        };
-
-        navigation {
-            // .--------------------------------------------------------------.       .-----------------------------------------------------------------------------.
-            // |       |       |       VOL- |      MUTE  |     VOL+   |       |       | PAGE_DOWN | WORKSPACE_PREV | WORKSPACE_NEXT | PAGE_UP |   INSERT    |       |
-            // |-------+-------+------------+------------+------------+-------|       |-----------+----------------+----------------+---------+-------------+-------|
-            // |       |  LGUI |    LALT    |      LCTRL |     LSHIFT |       |       |      LEFT |           DOWN |             UP |   RIGHT | PRINTSCREEN |       |
-            // |-------+-------+------------+------------+------------+-------|       |-----------+----------------+----------------+---------+-------------+-------|
-            // |       |       | PREV_TRACK | PLAY/PAUSE | NEXT_TRACK |       |       |      HOME |      PREV_WORD |      NEXT_WORD |     END |             |       |
-            // '----------------------------+------------+------------+-------|       |-----------+----------------+----------------+-------------------------------'
-            //                              |            |            |       |       |           |                |                |
-            //                              '------------+------------+-------'       '-----------+----------------+----------------'
-
-            bindings = <
-&none  &switch_lng  &kp C_VOLUME_DOWN  &kp C_MUTE       &kp C_VOLUME_UP     &kp LA(SPACE)    &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
-&none  &kp LGUI     &hrm LALT C_PREV   &hrm LCTRL C_PP  &hrm LSHIFT C_NEXT  &kp LG(TAB)      &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
-&none  &kp LC(Z)    &kp LC(X)          &kp LC(INS)      &kp LS(INS)         &kp LC(Y)        &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
-                                       &trans           &trans              &trans           &trans          &kp BSPC          &trans
+                                 &none         &tl 2 TAB  &tm LSHIFT SPACE    &tm RSHIFT ENTER  &tl 1 BACKSPACE  &none
             >;
         };
 
@@ -231,6 +222,25 @@
 &none  &hrm LGUI F11  &hrm LALT F4  &hrm LCTRL F5  &hrm LSHIFT F6  &none     &kp PLUS      &hrm LEFT_SHIFT NUMBER_4  &hrm LCTRL NUMBER_5  &hrm LALT NUMBER_6  &hrm LMETA NUMBER_0  &none
 &none  &kp F12        &kp F1        &kp F2         &kp F3          &none     &kp MINUS     &kp N1                    &kp N2               &kp N3              &kp DOT              &none
                                     &trans         &trans          &trans    &trans        &trans                    &trans
+            >;
+        };
+
+        navigation {
+            // .--------------------------------------------------------------.       .-----------------------------------------------------------------------------.
+            // |       |       |       VOL- |      MUTE  |     VOL+   |       |       | PAGE_DOWN | WORKSPACE_PREV | WORKSPACE_NEXT | PAGE_UP |   INSERT    |       |
+            // |-------+-------+------------+------------+------------+-------|       |-----------+----------------+----------------+---------+-------------+-------|
+            // |       |  LGUI |    LALT    |      LCTRL |     LSHIFT |       |       |      LEFT |           DOWN |             UP |   RIGHT | PRINTSCREEN |       |
+            // |-------+-------+------------+------------+------------+-------|       |-----------+----------------+----------------+---------+-------------+-------|
+            // |       |       | PREV_TRACK | PLAY/PAUSE | NEXT_TRACK |       |       |      HOME |      PREV_WORD |      NEXT_WORD |     END |             |       |
+            // '----------------------------+------------+------------+-------|       |-----------+----------------+----------------+-------------------------------'
+            //                              |            |            |       |       |           |                |                |
+            //                              '------------+------------+-------'       '-----------+----------------+----------------'
+
+            bindings = <
+&none  &switch_lng  &kp C_VOLUME_DOWN  &kp C_MUTE       &kp C_VOLUME_UP     &kp LA(SPACE)    &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
+&none  &kp LGUI     &hrm LALT C_PREV   &hrm LCTRL C_PP  &hrm LSHIFT C_NEXT  &kp LG(TAB)      &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
+&none  &kp LC(Z)    &kp LC(X)          &kp LC(INS)      &kp LS(INS)         &kp LC(Y)        &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
+                                       &trans           &trans              &trans           &trans          &kp BSPC          &trans
             >;
         };
 
@@ -276,12 +286,12 @@
         compatible = "zmk,conditional-layers";
 
         activate_additional {
-            if-layers = <1 2>;
+            if-layers = <3 1>;
             then-layer = <4>;
         };
 
         layer_bluetooth {
-            if-layers = <1 3>;
+            if-layers = <3 2>;
             then-layer = <4>;
         };
     };
