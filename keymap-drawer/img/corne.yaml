@@ -57,7 +57,7 @@ layers:
   - '?'
   - ''
   - ''
-  - ':'
+  - '%'
   - '['
   - '{'
   - (
@@ -66,7 +66,7 @@ layers:
   - )
   - '}'
   - ']'
-  - ;
+  - {t: ':', h: ;}
   - ''
   - ''
   - '#'
@@ -78,14 +78,14 @@ layers:
   - '*'
   - '|'
   - '`'
-  - '%'
+  - {t: mouse, h: toggle}
   - ''
+  - ''
+  - {t: qwerty, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: number_fn, h: toggle}
+  - ''
   number_fn:
   - ''
   - F10

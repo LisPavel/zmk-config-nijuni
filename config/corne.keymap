@@ -199,10 +199,10 @@
             //                         '-------+-------+-------'       '-------+-------+-------'
 
             bindings = <
-&none  &kp EXCL   &kp LT     &kp EQUAL  &kp FSLH   &kp CARET            &kp DLLR   &kp BSLH  &kp PLUS  &kp GT     &kp QMARK  &none
-&none  &kp COLON  &kp LBKT   &kp LBRC   &kp LPAR   &kp DOUBLE_QUOTES    &kp SQT    &kp RPAR  &kp RBRC  &kp RBKT   &kp SEMI   &none
-&none  &kp HASH   &kp UNDER  &kp AMPS   &kp MINUS  &kp AT_SIGN          &kp TILDE  &kp STAR  &kp PIPE  &kp GRAVE  &kp PRCNT  &none
-                             &trans     &trans     &trans               &trans     &trans    &trans
+&none  &kp EXCL   &kp LT     &kp EQUAL  &kp FSLH   &kp CARET            &kp DLLR   &kp BSLH  &kp PLUS  &kp GT     &kp QMARK        &none
+&none  &kp PRCNT  &kp LBKT   &kp LBRC   &kp LPAR   &kp DOUBLE_QUOTES    &kp SQT    &kp RPAR  &kp RBRC  &kp RBKT   &hrm SEMI COLON  &none
+&none  &kp HASH   &kp UNDER  &kp AMPS   &kp MINUS  &kp AT_SIGN          &kp TILDE  &kp STAR  &kp PIPE  &kp GRAVE  &to 5            &none
+                             &none      &to 0      &trans               &trans     &to 2     &none
             >;
         };
 
