@@ -163,6 +163,18 @@
             key-positions = <3 4>;
             layers = <0>;
         };
+
+        c-return {
+            bindings = <&kp RET>;
+            key-positions = <19 20>;
+            layers = <0 2 1>;
+        };
+
+        c-tab {
+            bindings = <&kp TAB>;
+            key-positions = <16 15>;
+            layers = <0 1 2>;
+        };
     };
 
     keymap {
