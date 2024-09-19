@@ -26,7 +26,7 @@ layers:
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
   - ''
   - ''
-  - {t: Z, h: mouse}
+  - Z
   - X
   - C
   - V
@@ -38,10 +38,10 @@ layers:
   - /
   - ''
   - ''
-  - {t: '$$mdi:keyboard-tab$$', h: number_fn}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:backspace$$', h: symbols}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - $$mdi:backspace$$
+  - {t: symbols, h: toggle}
   - ''
   symbols:
   - ''
@@ -84,7 +84,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   number_fn:
   - ''
@@ -124,7 +124,7 @@ layers:
   - .
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -210,7 +210,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -241,7 +241,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
