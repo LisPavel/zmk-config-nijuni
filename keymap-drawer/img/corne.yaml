@@ -38,10 +38,10 @@ layers:
   - /
   - ''
   - ''
-  - {t: '$$mdi:keyboard-tab$$', h: number_fn}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: LSHFT}
+  - {t: '$$mdi:keyboard-space$$', h: number_fn}
   - {t: '$$mdi:backspace$$', h: symbols}
+  - {t: '$$mdi:keyboard-return$$', h: RSHFT}
   - ''
   navigation:
   - ''
@@ -81,8 +81,8 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
   - {t: LSHFT, h: sticky}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -126,8 +126,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   number_fn:
   - ''
@@ -167,8 +167,8 @@ layers:
   - .
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -210,8 +210,8 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

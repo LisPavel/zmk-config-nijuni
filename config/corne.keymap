@@ -180,10 +180,10 @@
             //                                     '-----------+-----------+----------------'       '----------------+-----------------+-----------'
 
             bindings = <
-&none  &kp Q        &kp W        &kp E         &kp R      &kp T               &kp Y             &kp U            &kp I         &kp O        &kp P                &none
-&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F   &kp G               &kp H             &hrl 1 J         &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
-&none  &lt 5 Z      &kp X        &kp C         &kp V      &kp B               &kp N             &kp M            &kp COMMA     &kp DOT      &kp FSLH             &none
-                                 &none         &tl 3 TAB  &tm LSHIFT SPACE    &tm RSHIFT ENTER  &tl 2 BACKSPACE  &none
+&none  &kp Q        &kp W        &kp E         &kp R          &kp T          &kp Y       &kp U          &kp I         &kp O        &kp P                &none
+&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrl 1 F       &kp G          &kp H       &hrl 1 J       &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
+&none  &lt 5 Z      &kp X        &kp C         &kp V          &kp B          &kp N       &kp M          &kp COMMA     &kp DOT      &kp FSLH             &none
+                                 &none         &tm LSHFT TAB  &tl 3 SPACE    &tl 2 BSPC  &tm RSHFT RET  &none
             >;
         };
 
@@ -202,7 +202,7 @@
 &none  &none      &kp C_VOLUME_DOWN  &kp C_MUTE    &kp C_VOLUME_UP  &kp C_BRI_UP    &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
 &none  &osm LGUI  &osm LALT          &osm LCTRL    &osm LSHIFT      &kp C_BRI_DN    &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
 &none  &none      &kp C_PREV         &kp LC(C_PP)  &kp C_NEXT       &none           &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
-                                     &none         &trans           &osm LSHFT      &trans          &trans            &none
+                                     &none         &osm LSHFT       &trans          &trans          &trans            &none
             >;
         };
 
