@@ -38,8 +38,8 @@ layers:
   - /
   - ''
   - ''
-  - {t: '$$mdi:keyboard-tab$$', h: LSHFT}
-  - {t: '$$mdi:keyboard-space$$', h: number_fn}
+  - {t: '$$mdi:keyboard-space$$', h: LSHFT}
+  - {t: '$$mdi:keyboard-tab$$', h: number_fn}
   - {t: '$$mdi:keyboard-return$$', h: symbols}
   - {t: '$$mdi:backspace$$', h: RSHFT}
   - ''
