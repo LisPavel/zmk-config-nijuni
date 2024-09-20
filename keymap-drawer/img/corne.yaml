@@ -1,0 +1,282 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  qwerty:
+  - ''
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ''
+  - ''
+  - {t: A, h: '$$mdi:microsoft-windows$$'}
+  - {t: S, h: LAlt}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: navigation}
+  - G
+  - H
+  - {t: J, h: navigation}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: RAlt}
+  - {t: ;, h: '$$mdi:microsoft-windows$$'}
+  - ''
+  - ''
+  - {t: Z, h: mouse}
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ''
+  - ''
+  - {t: '$$mdi:keyboard-tab$$', h: number_fn}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:backspace$$', h: symbols}
+  - ''
+  navigation:
+  - ''
+  - ''
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-mute$$
+  - $$mdi:volume-high$$
+  - BRI UP
+  - PAGE DOWN
+  - Prev Desk
+  - Next Desk
+  - PAGE UP
+  - INSERT
+  - ''
+  - ''
+  - {t: '$$mdi:microsoft-windows$$', h: sticky}
+  - {t: LAlt, h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky, type: held}
+  - BRI DN
+  - $$mdi:menu-left$$
+  - $$mdi:menu-down$$
+  - $$mdi:menu-up$$
+  - $$mdi:menu-right$$
+  - PRINTSCREEN
+  - ''
+  - ''
+  - ''
+  - $$mdi:skip-previous$$
+  - Ctl + $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - ''
+  - HOME
+  - Prev Word
+  - Next Word
+  - END
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: LSHFT, h: sticky}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  symbols:
+  - ''
+  - '!'
+  - <
+  - '='
+  - /
+  - ^
+  - $
+  - \
+  - +
+  - '>'
+  - '?'
+  - ''
+  - ''
+  - ':'
+  - '['
+  - '{'
+  - (
+  - '"'
+  - ''''
+  - )
+  - '}'
+  - ']'
+  - ;
+  - ''
+  - ''
+  - '#'
+  - _
+  - '&'
+  - '-'
+  - '@'
+  - '~'
+  - '*'
+  - '|'
+  - '`'
+  - '%'
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  number_fn:
+  - ''
+  - F10
+  - F7
+  - F8
+  - F9
+  - '?'
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - /
+  - ''
+  - ''
+  - {t: F11, h: '$$mdi:microsoft-windows$$'}
+  - {t: F4, h: LAlt}
+  - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-shift$$'}
+  - /
+  - +
+  - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '6', h: LAlt}
+  - {t: '0', h: '$$mdi:microsoft-windows$$'}
+  - ''
+  - ''
+  - F12
+  - F1
+  - F2
+  - F3
+  - ','
+  - '-'
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  bluetooth:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - BT CLR ALL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - {t: BT, h: '3'}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LAlt
+  - $$mdi:apple-keyboard-control$$
+  - LSHFT
+  - ''
+  - {t: '$$mdi:chevron-left$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-down$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-up$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-right$$', h: '$$mdi:mouse$$'}
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:chevron-double-left$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-down$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-up$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:chevron-double-right$$', h: '$$mdi:mouse$$'}
+  - ''
+  - ''
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-scroll-wheel$$
+combos:
+- p: [38, 39]
+  k: {t: '$$mdi:caps-lock$$', h: Caps Word}
+  l: [qwerty]
+- p: [2, 3]
+  k: ESC
+  l: [qwerty]
+- p: [9, 8]
+  k: $$mdi:backspace-reverse$$
+  l: [qwerty]
+- p: [21, 20]
+  k: ']'
+  l: [qwerty]
+- p: [14, 15]
+  k: '['
+  l: [qwerty]
+- p: [7, 8]
+  k: ''''
+  l: [qwerty]
+- p: [3, 4]
+  k: '`'
+  l: [qwerty]
