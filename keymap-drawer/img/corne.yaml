@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: LSHFT}
   - {t: '$$mdi:keyboard-tab$$', h: number_fn}
   - {t: '$$mdi:keyboard-return$$', h: symbols}
-  - {t: '$$mdi:keyboard-return$$', h: RSHFT}
+  - {t: '$$mdi:backspace$$', h: RSHFT}
   - ''
   navigation:
   - ''
