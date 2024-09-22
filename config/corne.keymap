@@ -65,7 +65,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             flavor = "balanced";
-            quick-tap-ms = <170>;
         };
 
         osm: osm {
