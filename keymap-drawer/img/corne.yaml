@@ -155,16 +155,16 @@ layers:
   - {t: '0', h: '$$mdi:microsoft-windows$$'}
   - ''
   - ''
-  - ','
-  - '['
-  - '{'
-  - (
+  - ''
+  - ''
+  - ''
+  - ''
   - F11
   - F12
-  - )
-  - '}'
-  - ']'
-  - .
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
