@@ -173,7 +173,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   bluetooth:
-  - ''
+  - '&studio_unlock'
   - ''
   - ''
   - ''
