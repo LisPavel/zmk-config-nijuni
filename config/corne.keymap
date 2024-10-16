@@ -270,7 +270,7 @@
 //                        &mkp MB3   &mkp MB2   &mkp MB1    &mkp MB1        &mkp MB2        &mkp MB3
 //            >;
 //        };
-//    };
+    };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
