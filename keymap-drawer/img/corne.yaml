@@ -173,7 +173,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   bluetooth:
-  - ''
+  - '&bootloader'
   - ''
   - ''
   - ''
@@ -184,7 +184,7 @@ layers:
   - ''
   - ''
   - BT CLR ALL
-  - ''
+  - '&bootloader'
   - ''
   - ''
   - ''
