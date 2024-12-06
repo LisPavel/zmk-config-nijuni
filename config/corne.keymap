@@ -4,7 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1500  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 80    // 10
 
 // #define ZMK_MOUSE_DEFAULT_SCRL_VAL 10
 
@@ -12,6 +13,19 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
+
+// Config from @caksoylar, defaults in comments
+&mmv {
+  acceleration-exponent = <1>;      // 1
+  time-to-max-speed-ms = <500>;     // 300
+  delay-ms = <0>;                   // 0
+};
+
+&msc {
+  acceleration-exponent = <1>;      // 0
+  time-to-max-speed-ms = <40>;      // 300
+  delay-ms = <0>;                   // 0
+};
 
 / {
     behaviors {
@@ -79,13 +93,6 @@
     };
 
     macros {
-        arrow_fn: arrow_fn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GT>;
-            label = "ARROW_FN";
-        };
-
         switch_lng_meta_spc: switch_lng_meta_spc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
