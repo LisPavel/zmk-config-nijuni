@@ -69,11 +69,11 @@ layers:
   - PRINTSCREEN
   - ''
   - ''
-  - ''
-  - $$mdi:skip-previous$$
-  - Ctl + $$mdi:play-pause$$
-  - $$mdi:skip-next$$
-  - ''
+  - {t: '$$mdi:undo$$', h: Undo}
+  - {t: '$$mdi:content-cut$$', h: Cut}
+  - {t: '$$mdi:content-copy$$', h: Copy}
+  - {t: '$$mdi:content-paste$$', h: Paste}
+  - {t: '$$mdi:redo$$', h: Redo}
   - HOME
   - Prev Word
   - Next Word
@@ -172,12 +172,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  bluetooth:
+  adjust:
   - '&bootloader'
   - ''
-  - ''
-  - ''
-  - ''
+  - VOL DN
+  - $$mdi:volume-mute$$
+  - VOL UP
   - ''
   - BT CLR
   - ''
@@ -186,11 +186,11 @@ layers:
   - BT CLR ALL
   - '&bootloader'
   - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
+  - $$mdi:skip-previous$$
+  - $$mdi:menu-left$$
+  - $$mdi:play-pause$$
+  - {t: '$$mdi:menu-right$$', type: held}
+  - $$mdi:skip-next$$
   - {t: BT, h: '3'}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
