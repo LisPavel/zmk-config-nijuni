@@ -241,10 +241,10 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - {t: '&tog_off 5', type: held}
   - ''
   - ''
-  - ''
+  - '&tog_on 5'
   - ''
   - {t: '$$mdi:chevron-double-left$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:chevron-double-down$$', h: '$$mdi:mouse$$'}
