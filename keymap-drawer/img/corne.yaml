@@ -46,10 +46,10 @@ layers:
   navigation:
   - ''
   - ''
-  - $$mdi:volume-medium$$
-  - $$mdi:volume-mute$$
-  - $$mdi:volume-high$$
-  - BRI UP
+  - ''
+  - ''
+  - ''
+  - ''
   - PAGE DOWN
   - Prev Desk
   - Next Desk
@@ -61,7 +61,7 @@ layers:
   - {t: LAlt, h: sticky}
   - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
   - {t: '$$mdi:apple-keyboard-shift$$', h: sticky, type: held}
-  - BRI DN
+  - ''
   - $$mdi:menu-left$$
   - $$mdi:menu-down$$
   - $$mdi:menu-up$$
@@ -174,11 +174,11 @@ layers:
   - {t: ▽, type: trans}
   adjust:
   - '&bootloader'
-  - ''
+  - BRI DN
   - VOL DN
   - $$mdi:volume-mute$$
   - VOL UP
-  - ''
+  - BRI UP
   - BT CLR
   - ''
   - ''

@@ -12,10 +12,13 @@
 
 // #define ZMK_MOUSE_DEFAULT_SCRL_VAL 10
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // Config from @caksoylar, defaults in comments
 
@@ -209,10 +212,10 @@
             //                              '------------+------------+-------'       '-----------+----------------+----------------'
 
             bindings = <
-&none  &none      &kp C_VOLUME_DOWN  &kp C_MUTE   &kp C_VOLUME_UP  &kp C_BRI_UP    &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
-&none  &osm LGUI  &osm LALT          &osm LCTRL   &osm LSHIFT      &kp C_BRI_DN    &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
-&none  &kp LC(Z)  &kp LC(X)          &kp LC(INS)  &kp LS(INS)      &kp LC(Y)       &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
-                                     &none        &osm LSHFT       &trans          &trans          &trans            &none
+&none  &none      &none      &none        &none        &none        &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
+&none  &osm LGUI  &osm LALT  &osm LCTRL   &osm LSHIFT  &none        &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
+&none  &kp LC(Z)  &kp LC(X)  &kp LC(INS)  &kp LS(INS)  &kp LC(Y)    &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
+                             &none        &osm LSHFT   &trans       &trans          &trans            &none
             >;
         };
 
@@ -266,10 +269,10 @@
             //                                 '-----------+-------+-------'       '--------+-------+-------'
 
             bindings = <
-&bootloader  &none       &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none         &bt BT_CLR    &none         &none         &none         &bt BT_CLR_ALL  &bootloader
-&none        &kp C_PREV  &kp LEFT      &kp C_PP    &kp RIGHT     &kp C_NEXT    &bt BT_SEL 3  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4    &none
-&none        &none       &none         &none       &none         &none         &none         &none         &none         &none         &none           &none
-                                       &trans      &trans        &trans        &trans        &trans        &trans
+&bootloader  &kp C_BRI_DN  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp C_BRI_UP    &bt BT_CLR    &none         &none         &none         &bt BT_CLR_ALL  &bootloader
+&none        &kp C_PREV    &kp LEFT      &kp C_PP    &kp RIGHT     &kp C_NEXT      &bt BT_SEL 3  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4    &none
+&none        &none         &none         &none       &none         &none           &none         &none         &none         &none         &none           &none
+                                         &trans      &trans        &trans          &trans        &trans        &trans
             >;
         };
 
