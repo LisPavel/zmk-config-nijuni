@@ -1,7 +1,7 @@
 manifest:
   defaults:
-    remote: urob
-    revision: v0.1
+    remote: upstream
+    # revision: v0.1
 
   remotes:
     - name: upstream
@@ -17,7 +17,6 @@ manifest:
     - name: zmk-tri-state
       path: modules/tri-state
     - name: zmk-leader-key
-      revision: legacy
       path: modules/leader-key
 
     # ZMK with Zephyr namespaced under /zmk. This requires that ZMK imports
