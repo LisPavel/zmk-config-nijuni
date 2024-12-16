@@ -83,7 +83,7 @@
             toggle-mode = "on";
         };
 
-        tog_off: toggle_layer_on_only {
+        tog_off: toggle_layer_off_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             display-name = "Toggle Layer Off";
