@@ -13,7 +13,7 @@
 
 &mmv_input_listener {
     input-processors = <&zip_temp_layer 2 2000>;
-}
+};
 
 &msc {
     acceleration-exponent = <1>;      // 0
@@ -23,7 +23,7 @@
 
 &msc_input_listener {
     input-processors = <&zip_temp_layer 2 2000>;
-}
+};
 
 / {
     behaviors {
