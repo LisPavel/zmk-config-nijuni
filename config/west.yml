@@ -1,7 +1,7 @@
 manifest:
   defaults:
-    remote: upstream
-    revision: main
+    remote: urob
+    revision: v0.1
 
   remotes:
     - name: upstream
@@ -22,6 +22,8 @@ manifest:
     # ZMK with Zephyr namespaced under /zmk. This requires that ZMK imports
     # Zephyr with a path other than `zephyr` (as in `going-modular`).
     - name: zmk
+      remote: upstream
+      revision: main
       path: .
       import:
         file: app/west.yml
