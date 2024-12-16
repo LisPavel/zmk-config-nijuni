@@ -244,7 +244,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - {t: mouse, h: toggle}
+  - ''
   - ''
   - {t: '$$mdi:chevron-double-left$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:chevron-double-down$$', h: '$$mdi:mouse$$'}
