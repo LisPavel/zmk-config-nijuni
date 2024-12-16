@@ -241,8 +241,8 @@ layers:
   - ''
   - ''
   - ''
-  - {t: qwerty, h: toggle, type: held}
-  - ''
+  - {type: held}
+  - {t: qwerty, h: toggle}
   - ''
   - {t: mouse, h: toggle}
   - ''
