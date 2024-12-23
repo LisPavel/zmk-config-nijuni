@@ -38,10 +38,10 @@ layers:
   - /
   - ''
   - ''
-  - {t: '$$mdi:keyboard-tab$$', h: LSHFT}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: number_fn}
   - {t: '$$mdi:keyboard-return$$', h: symbols}
-  - {t: '$$mdi:backspace$$', h: RSHFT}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
   - ''
   navigation:
   - ''
@@ -81,7 +81,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: LSHFT, h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -232,7 +232,7 @@ layers:
   - ''
   - LAlt
   - $$mdi:apple-keyboard-control$$
-  - LSHFT
+  - $$mdi:apple-keyboard-shift$$
   - ''
   - {t: '$$mdi:chevron-left$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:chevron-down$$', h: '$$mdi:mouse$$'}
