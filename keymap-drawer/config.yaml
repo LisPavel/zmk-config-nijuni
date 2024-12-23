@@ -204,6 +204,7 @@ parse_config:
     LCTRL: $$mdi:apple-keyboard-control$$
     RCTRL: $$mdi:apple-keyboard-control$$
     PRINTSCREEN: Prt Sc
+    INSERT: Ins
 
     #default keys
     EXCLAMATION: '!'
