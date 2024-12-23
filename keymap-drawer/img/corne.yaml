@@ -173,18 +173,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
-  - '&bootloader'
-  - BRI DN
-  - VOL DN
+  - BOOT
+  - $$mdi:brightness-6$$
+  - $$mdi:volume-medium$$
   - $$mdi:volume-mute$$
-  - VOL UP
-  - BRI UP
+  - $$mdi:volume-high$$
+  - $$mdi:brightness-5$$
   - BT CLR
   - ''
   - ''
   - ''
   - BT CLR ALL
-  - '&bootloader'
+  - BOOT
   - ''
   - $$mdi:skip-previous$$
   - $$mdi:menu-left$$
@@ -252,12 +252,12 @@ layers:
   - {t: '$$mdi:chevron-double-right$$', h: '$$mdi:mouse$$'}
   - ''
   - ''
-  - '&mkp MCLK'
-  - '&mkp RCLK'
-  - '&mkp LCLK'
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp MCLK'
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-scroll-wheel$$
 combos:
 - p: [38, 39]
   k: {t: '$$mdi:caps-lock$$', h: Caps Word}
