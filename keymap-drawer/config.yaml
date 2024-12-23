@@ -205,6 +205,8 @@ parse_config:
     RCTRL: $$mdi:apple-keyboard-control$$
     PRINTSCREEN: Prt Sc
     INSERT: Ins
+    HOME: Home
+    END: End
 
     #default keys
     EXCLAMATION: '!'
