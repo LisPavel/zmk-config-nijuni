@@ -242,9 +242,9 @@ layers:
   - ''
   - ''
   - {type: held}
-  - {t: qwerty, h: toggle}
   - ''
-  - {t: mouse, h: toggle}
+  - ''
+  - ''
   - ''
   - {t: '$$mdi:chevron-double-left$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:chevron-double-down$$', h: '$$mdi:mouse$$'}
@@ -280,3 +280,6 @@ combos:
 - p: [3, 4]
   k: '`'
   l: [qwerty]
+- p: [25, 34]
+  k: {t: mouse, h: toggle}
+  l: [qwerty, mouse]

@@ -168,6 +168,12 @@
             key-positions = <3 4>;
             layers = <0>;
         };
+
+        tg_l_mouse {
+            bindings = <&tog 5>;
+            key-positions = <25 34>;
+            layers = <0 5>;
+        };
     };
 
     keymap {
@@ -272,7 +278,7 @@
             bindings = <
 &none  &none  &none     &none      &none      &none        &none           &none           &none         &none            &none  &none
 &none  &none  &kp LALT  &kp LCTRL  &kp LSHFT  &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
-&none  &none  &to 0     &none      &to 5      &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
+&none  &none  &none     &none      &none      &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
                         &mkp MCLK  &mkp RCLK  &mkp LCLK    &mkp LCLK       &mkp RCLK       &mkp MCLK
             >;
         };
