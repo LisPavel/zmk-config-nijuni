@@ -189,6 +189,12 @@
             key-positions = <4 3>;
             layers = <0 1 2 3>;
         };
+
+        c_tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 14>;
+            layers = <0>;
+        };
     };
 
     keymap {
