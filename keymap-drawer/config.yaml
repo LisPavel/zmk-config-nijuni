@@ -203,6 +203,7 @@ parse_config:
     LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
     LCTRL: $$mdi:apple-keyboard-control$$
     RCTRL: $$mdi:apple-keyboard-control$$
+    PRINTSCREEN: Prt Sc
 
     #default keys
     EXCLAMATION: '!'
