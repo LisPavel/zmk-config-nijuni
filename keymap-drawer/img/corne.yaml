@@ -266,7 +266,7 @@ combos:
   k: ESC
   l: [qwerty]
 - p: [8, 7]
-  k: $$mdi:backspace$$
+  k: {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
   l: [qwerty, navigation, symbols, number_fn]
 - p: [21, 20]
   k: ']'
