@@ -167,7 +167,9 @@ parse_config:
     C_NEXT: $$mdi:skip-next$$
     C_PREV: $$mdi:skip-previous$$
     C_VOLUME_DOWN: $$mdi:volume-medium$$
+    C_VOL_DN: $$mdi:volume-medium$$
     C_VOLUME_UP: $$mdi:volume-high$$        
+    C_VOL_UP: $$mdi:volume-high$$        
     C_MUTE: $$mdi:volume-mute$$
 
     # keyboard
