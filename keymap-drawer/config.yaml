@@ -67,6 +67,7 @@ parse_config:
     '&msc SCRL_RIGHT': {t: $$mdi:chevron-double-right$$, h: $$mdi:mouse$$}
     '&msc SCRL_UP': {t: $$mdi:chevron-double-up$$, h: $$mdi:mouse$$}
     '&msc SCRL_DOWN': {t: $$mdi:chevron-double-down$$, h: $$mdi:mouse$$}
+    '&bootloader': BOOT
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
