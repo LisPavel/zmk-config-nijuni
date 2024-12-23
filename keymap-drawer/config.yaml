@@ -172,6 +172,12 @@ parse_config:
     C_VOL_UP: $$mdi:volume-high$$        
     C_MUTE: $$mdi:volume-mute$$
 
+    # display
+    C_BRIGHTNESS_DOWN: $$mdi:brightness-6$$
+    C_BRI_DN: $$mdi:brightness-6$$
+    C_BRIGHTNESS_UP: $$mdi:brightness-5$$
+    C_BRI_UP: $$mdi:brightness-5$$
+
     # keyboard
     SPACE: $$mdi:keyboard-space$$
     BSPC: $$mdi:backspace$$
