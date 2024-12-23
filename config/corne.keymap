@@ -89,6 +89,15 @@
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
         };
+
+        bsp_del: bsp_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSP_DEL";
+            bindings = <&kp BSPC>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
