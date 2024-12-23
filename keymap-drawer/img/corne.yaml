@@ -265,16 +265,16 @@ combos:
 - p: [2, 3]
   k: ESC
   l: [qwerty]
-- p: [9, 8]
-  k: $$mdi:backspace-reverse$$
-  l: [qwerty]
+- p: [8, 7]
+  k: $$mdi:backspace$$
+  l: [qwerty, navigation, symbols, number_fn]
 - p: [21, 20]
   k: ']'
   l: [qwerty]
 - p: [14, 15]
   k: '['
   l: [qwerty]
-- p: [7, 8]
+- p: [8, 9]
   k: ''''
   l: [qwerty]
 - p: [1, 2]
@@ -283,3 +283,6 @@ combos:
 - p: [25, 34]
   k: {t: mouse, h: toggle}
   l: [qwerty, mouse]
+- p: [4, 3]
+  k: $$mdi:keyboard-return$$
+  l: [qwerty, navigation, symbols, number_fn]

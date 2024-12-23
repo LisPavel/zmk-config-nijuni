@@ -148,10 +148,10 @@
             layers = <0>;
         };
 
-        c_del {
-            bindings = <&kp DEL>;
-            key-positions = <9 8>;
-            layers = <0>;
+        c_bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <8 7>;
+            layers = <0 1 2 3>;
         };
 
         c-r-bracket {
@@ -168,7 +168,7 @@
 
         c-semicolon {
             bindings = <&kp SQT>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
             layers = <0>;
         };
 
@@ -178,10 +178,16 @@
             layers = <0>;
         };
 
-        tg_l_mouse {
+        c_tg_l_mouse {
             bindings = <&tog 5>;
             key-positions = <25 34>;
             layers = <0 5>;
+        };
+
+        c_enter {
+            bindings = <&kp RET>;
+            key-positions = <4 3>;
+            layers = <0 1 2 3>;
         };
     };
 
