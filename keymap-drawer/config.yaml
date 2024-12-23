@@ -54,8 +54,11 @@ parse_config:
     '&kp LA(SPACE)': (K)Runner
     '&kp LG(TAB)': Desk Overview
     '&mkp MB1': {t: $$mdi:mouse-left-click$$}
+    '&mkp LCLK': {t: $$mdi:mouse-left-click$$}
     '&mkp MB2': {t: $$mdi:mouse-right-click$$}
+    '&mkp RCLK': {t: $$mdi:mouse-right-click$$}
     '&mkp MB3': {t: $$mdi:mouse-scroll-wheel$$}
+    '&mkp MCLK': {t: $$mdi:mouse-scroll-wheel$$}
     '&mmv MOVE_LEFT': {t: $$mdi:chevron-left$$, h: $$mdi:mouse$$}
     '&mmv MOVE_RIGHT': {t: $$mdi:chevron-right$$, h: $$mdi:mouse$$}
     '&mmv MOVE_UP': {t: $$mdi:chevron-up$$, h: $$mdi:mouse$$}
