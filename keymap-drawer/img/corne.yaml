@@ -54,7 +54,7 @@ layers:
   - Prev Desk
   - Next Desk
   - PAGE UP
-  - INSERT
+  - Ins
   - ''
   - ''
   - {t: '$$mdi:microsoft-windows$$', h: sticky}
@@ -66,7 +66,7 @@ layers:
   - $$mdi:menu-down$$
   - $$mdi:menu-up$$
   - $$mdi:menu-right$$
-  - PRINTSCREEN
+  - Prt Sc
   - ''
   - ''
   - {t: '$$mdi:undo$$', h: Undo}
@@ -74,10 +74,10 @@ layers:
   - {t: '$$mdi:content-copy$$', h: Copy}
   - {t: '$$mdi:content-paste$$', h: Paste}
   - {t: '$$mdi:redo$$', h: Redo}
-  - HOME
+  - Home
   - Prev Word
   - Next Word
-  - END
+  - End
   - ''
   - ''
   - ''
