@@ -17,10 +17,10 @@ layers:
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: S, h: LAlt}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: navigation}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - {t: J, h: navigation}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RAlt}
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
@@ -38,10 +38,10 @@ layers:
   - /
   - ''
   - ''
-  - number_fn
+  - navigation
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-shift$$
   - symbols
+  - number_fn
   - ''
   navigation:
   - ''
@@ -60,7 +60,7 @@ layers:
   - {t: '$$mdi:microsoft-windows$$', h: sticky}
   - {t: LAlt, h: sticky}
   - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky, type: held}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - ''
   - $$mdi:menu-left$$
   - $$mdi:menu-down$$
@@ -81,7 +81,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -126,8 +126,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   number_fn:
   - ''
@@ -167,10 +167,10 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
   - BOOT
@@ -189,7 +189,7 @@ layers:
   - $$mdi:skip-previous$$
   - $$mdi:menu-left$$
   - $$mdi:play-pause$$
-  - {t: '$$mdi:menu-right$$', type: held}
+  - $$mdi:menu-right$$
   - $$mdi:skip-next$$
   - {t: BT, h: '3'}
   - {t: BT, h: '0'}
@@ -213,7 +213,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   mouse:
   - ''
