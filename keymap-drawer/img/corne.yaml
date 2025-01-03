@@ -38,10 +38,10 @@ layers:
   - /
   - ''
   - ''
-  - navigation
+  - number_fn
   - $$mdi:keyboard-space$$
   - symbols
-  - number_fn
+  - navigation
   - ''
   navigation:
   - ''
@@ -81,10 +81,10 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky, type: held}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - ''
   symbols:
   - ''
@@ -167,10 +167,10 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
   - BOOT
