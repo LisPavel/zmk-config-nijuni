@@ -81,7 +81,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
