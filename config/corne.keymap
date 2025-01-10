@@ -20,10 +20,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <185>;
+            quick-tap-ms = <160>;
             flavor = "balanced";
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <135>;
         };
 
         hrl: homerow_layer {
