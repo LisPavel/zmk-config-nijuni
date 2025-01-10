@@ -14,18 +14,16 @@
 
 / {
     behaviors {
-        hrm_r: homerow_mods {
+        hrm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <195>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <170>;
             flavor = "balanced";
-            require-prior-idle-ms = <135>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 2 3 4 5 17 16 15 14 13 12 24 25 26 27 28 29 36 37 38 39 40 41>;
+            require-prior-idle-ms = <140>;
         };
 
         hrl: homerow_layer {
@@ -99,20 +97,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        hrm_l: hrm_l {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRM_L";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <195>;
-            quick-tap-ms = <170>;
-            flavor = "balanced";
-            require-prior-idle-ms = <135>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <6 18 30 39 40 41 31 7 8 20 32 19 9 21 33 34 22 10 11 23 35 36 37 38>;
         };
     };
 
@@ -228,10 +212,10 @@
             //                                     '-----------+-----------+----------------'       '----------------+-----------------+-----------'
 
             bindings = <
-&none  &kp Q          &kp W          &kp E           &kp R           &kp T        &kp Y  &kp U           &kp I           &kp O          &kp P                  &none
-&none  &hrm_l LGUI A  &hrm_l LALT S  &hrm_l LCTRL D  &hrm_l LSHFT F  &kp G        &kp H  &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r RGUI SEMICOLON  &none
-&none  &lt 5 Z        &kp X          &kp C           &kp V           &kp B        &kp N  &kp M           &kp COMMA       &kp DOT        &kp FSLH               &none
-                                     &none           &mo 3           &kp SPACE    &mo 2  &mo 1           &none
+&none  &kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y  &kp U         &kp I         &kp O        &kp P                &none
+&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrm LSHFT F  &kp G        &kp H  &hrm RSHFT J  &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
+&none  &lt 5 Z      &kp X        &kp C         &kp V         &kp B        &kp N  &kp M         &kp COMMA     &kp DOT      &kp FSLH             &none
+                                 &none         &mo 3         &kp SPACE    &mo 2  &mo 1         &none
             >;
         };
 
@@ -285,10 +269,10 @@
             //                         '-------+-------+-------'       '-------+-------+-------'
 
             bindings = <
-&none  &kp F1          &kp F2          &kp F3           &kp F4            &kp F5     &kp F6   &kp F7                &kp F8           &kp F9          &kp F10                &none
-&none  &hrm_l LGUI N1  &hrm_l LALT N2  &hrm_l LCTRL N3  &hrm_l LSHIFT N4  &kp N5     &kp N6   &hrm_r LEFT_SHIFT N7  &hrm_r LCTRL N8  &hrm_r LALT N9  &hrm_r LMETA NUMBER_0  &none
-&none  &kp MINUS       &kp PLUS        &kp STAR         &kp LPAR          &kp F11    &kp F12  &kp RPAR              &trans           &trans          &trans                 &none
-                                       &trans           &trans            &trans     &trans   &trans                &trans
+&none  &kp F1        &kp F2        &kp F3         &kp F4          &kp F5     &kp F6   &kp F7              &kp F8         &kp F9        &kp F10              &none
+&none  &hrm LGUI N1  &hrm LALT N2  &hrm LCTRL N3  &hrm LSHIFT N4  &kp N5     &kp N6   &hrm LEFT_SHIFT N7  &hrm LCTRL N8  &hrm LALT N9  &hrm LMETA NUMBER_0  &none
+&none  &kp MINUS     &kp PLUS      &kp STAR       &kp LPAR        &kp F11    &kp F12  &kp RPAR            &trans         &trans        &trans               &none
+                                   &trans         &trans          &trans     &trans   &trans              &trans
             >;
         };
 
