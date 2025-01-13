@@ -41,20 +41,20 @@ layers:
   - number_fn
   - $$mdi:keyboard-space$$
   - symbols
-  - navigation
+  - '&la 1'
   - ''
   navigation:
   - ''
   - ''
   - ''
+  - PG DN
+  - PG UP
   - ''
-  - ''
-  - ''
-  - PAGE DOWN
+  - {t: '&m_hold_mod_press_key LCTRL TAB', s: '$$mdi:keyboard-tab$$'}
   - Prev Desk
   - Next Desk
   - PAGE UP
-  - Ins
+  - {t: '&m_hold_mod_press_key LALT TAB', s: '$$mdi:keyboard-tab$$'}
   - ''
   - ''
   - {t: '$$mdi:microsoft-windows$$', h: sticky}
@@ -84,7 +84,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''
   symbols:
   - ''
@@ -213,7 +213,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   mouse:
   - ''

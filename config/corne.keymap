@@ -40,34 +40,6 @@
             require-prior-idle-ms = <150>;
         };
 
-        switch_lng: switch_lng {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SWITCH_LNG";
-            #binding-cells = <0>;
-            bindings = <&switch_lng_meta_spc>, <&switch_lng_shft_alt>;
-        };
-
-        tm: tm {
-            compatible = "zmk,behavior-hold-tap";
-            label = "THUMB_MODE";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "balanced";
-            quick-tap-ms = <170>;
-        };
-
-        tl: tl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "THUMB_LAYER";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "balanced";
-        };
-
         osm: osm {
             compatible = "zmk,behavior-sticky-key";
             label = "OSM";
@@ -76,20 +48,6 @@
             release-after-ms = <1000>;
             quick-release;
             ignore-modifiers;
-        };
-
-        tog_on: toggle_layer_on_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer On";
-            toggle-mode = "on";
-        };
-
-        tog_off: toggle_layer_off_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer Off";
-            toggle-mode = "off";
         };
 
         bsp_del: bsp_del {
@@ -113,6 +71,26 @@
             require-prior-idle-ms = <130>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <41 40 39 38 37 36 29 17 5 16 28 4 3 15 27 26 14 2 1 13 25 24 12 0>;
+        };
+
+        ctrl_tab: ctrl_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_TAB";
+            bindings = <&m_hold_mod_press_key LCTRL TAB>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_TAB";
+            bindings = <&m_hold_mod_press_key LALT TAB>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
         };
     };
 
@@ -145,6 +123,33 @@
                 <&kp LSHIFT>;
 
             label = "SWITCH_LNG_SHFT_ALT";
+        };
+
+        m_hold_mod_press_key: m_hold_mod_press_key {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&macro_param_2to1 &kp MACRO_PLACEHOLDER>;
+
+            label = "M_HOLD_MOD_PRESS_KEY";
+        };
+
+        la: la {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_tap>,
+                <&kp>,
+                <&macro_press>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER &kp LCTRL &kp LSHFT &kp LALT &kp LGUI>;
+
+            label = "LA";
         };
     };
 
@@ -231,7 +236,7 @@
 &none  &kp Q          &kp W          &kp E           &kp R           &kp T        &kp Y  &kp U           &kp I           &kp O          &kp P                  &none
 &none  &hrm_l LGUI A  &hrm_l LALT S  &hrm_l LCTRL D  &hrm_l LSHFT F  &kp G        &kp H  &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r RGUI SEMICOLON  &none
 &none  &lt 5 Z        &kp X          &kp C           &kp V           &kp B        &kp N  &kp M           &kp COMMA       &kp DOT        &kp FSLH               &none
-                                     &none           &mo 3           &kp SPACE    &mo 2  &mo 1           &none
+                                     &none           &mo 3           &kp SPACE    &mo 2  &la 1           &none
             >;
         };
 
@@ -247,7 +252,7 @@
             //                              '------------+------------+-------'       '-----------+----------------+----------------'
 
             bindings = <
-&none  &none      &none      &none        &none        &none        &kp PAGE_DOWN   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &kp INSERT       &none
+&none  &none      &none      &kp PG_DN    &kp PG_UP    &none        &ctrl_tab       &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &alt_tab         &none
 &none  &osm LGUI  &osm LALT  &osm LCTRL   &osm LSHIFT  &none        &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
 &none  &kp LC(Z)  &kp LC(X)  &kp LC(INS)  &kp LS(INS)  &kp LC(Y)    &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
                              &none        &trans       &trans       &trans          &trans            &none
