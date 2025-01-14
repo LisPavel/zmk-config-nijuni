@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   qwerty:
-  - ''
+  - '`'
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - ''
-  - ''
+  - ''''
+  - '['
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: S, h: LAlt}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -24,7 +24,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RAlt}
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
-  - ''
+  - ']'
   - ''
   - {t: Z, h: mouse}
   - X
@@ -268,18 +268,6 @@ combos:
 - p: [8, 7]
   k: {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
   l: [qwerty, navigation, symbols, number_fn]
-- p: [21, 20]
-  k: ']'
-  l: [qwerty]
-- p: [14, 15]
-  k: '['
-  l: [qwerty]
-- p: [8, 9]
-  k: ''''
-  l: [qwerty]
-- p: [1, 2]
-  k: '`'
-  l: [qwerty]
 - p: [25, 34]
   k: {t: mouse, h: toggle}
   l: [qwerty, mouse]
