@@ -252,9 +252,9 @@
             //                              '------------+------------+-------'       '-----------+----------------+----------------'
 
             bindings = <
-&none  &none      &none      &kp PG_DN    &kp PG_UP    &none        &ctrl_tab       &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp PAGE_UP  &alt_tab         &none
-&none  &osm LGUI  &osm LALT  &osm LCTRL   &osm LSHIFT  &none        &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT    &kp PRINTSCREEN  &none
-&none  &kp LC(Z)  &kp LC(X)  &kp LC(INS)  &kp LS(INS)  &kp LC(Y)    &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END      &none            &none
+&none  &none      &none      &kp PG_DN    &kp PG_UP    &none        &ctrl_tab       &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &alt_tab   &alt_tab         &none
+&none  &osm LGUI  &osm LALT  &osm LCTRL   &osm LSHIFT  &none        &kp LEFT_ARROW  &kp DOWN          &kp UP             &kp RIGHT  &kp PRINTSCREEN  &none
+&none  &kp LC(Z)  &kp LC(X)  &kp LC(INS)  &kp LS(INS)  &kp LC(Y)    &kp HOME        &kp LC(LEFT)      &kp LC(RIGHT)      &kp END    &none            &none
                              &none        &trans       &trans       &trans          &trans            &none
             >;
         };
