@@ -50,10 +50,10 @@ layers:
   - PG DN
   - PG UP
   - ''
-  - {t: '&m_hold_mod_press_key LCTRL TAB', s: '$$mdi:keyboard-tab$$'}
+  - Tabber
   - Prev Desk
   - Next Desk
-  - {t: '&m_hold_mod_press_key LALT TAB', s: '$$mdi:keyboard-tab$$'}
+  - Switcher
   - INS
   - ''
   - ''

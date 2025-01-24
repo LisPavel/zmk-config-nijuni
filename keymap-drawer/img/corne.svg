@@ -523,10 +523,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(532, 42)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;m_hold_mo…</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">LCTRL</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">TAB</tspan>
-</text>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-5" y="-24" height="10" width="10.0" class="key shifted glyph mdi:keyboard-tab"/>
+<text x="0" y="0" class="key tap">Tabber</text>
 </g>
 <g transform="translate(588, 35)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -542,10 +539,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(700, 35)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;m_hold_mo…</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">LALT</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">TAB</tspan>
-</text>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-5" y="-24" height="10" width="10.0" class="key shifted glyph mdi:keyboard-tab"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">Switcher</tspan></text>
 </g>
 <g transform="translate(756, 49)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
