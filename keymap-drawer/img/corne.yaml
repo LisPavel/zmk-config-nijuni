@@ -54,7 +54,7 @@ layers:
   - Prev Desk
   - Next Desk
   - {t: '&m_hold_mod_press_key LALT TAB', s: '$$mdi:keyboard-tab$$'}
-  - {t: '&m_hold_mod_press_key LALT TAB', s: '$$mdi:keyboard-tab$$'}
+  - INS
   - ''
   - ''
   - {t: '$$mdi:microsoft-windows$$', h: sticky}
