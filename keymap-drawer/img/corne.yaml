@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   qwerty:
-  - '`'
+  - ''
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - ''''
-  - '['
+  - ''
+  - ''
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: S, h: LAlt}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -24,7 +24,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RAlt}
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
-  - ']'
+  - ''
   - ''
   - {t: Z, h: mouse}
   - X
@@ -277,3 +277,27 @@ combos:
 - p: [8, 9]
   k: $$mdi:keyboard-tab$$
   l: [qwerty]
+- p: [6, 7]
+  k: ''''
+  l: [qwerty, symbols, number_fn]
+- p: [4, 5]
+  k: '`'
+  l: [qwerty, symbols, number_fn]
+- p: [16, 17]
+  k: '['
+  l: [qwerty, symbols, number_fn]
+- p: [18, 19]
+  k: ']'
+  l: [qwerty, symbols, number_fn]
+- p: [15, 16]
+  k: (
+  l: [qwerty, symbols, number_fn]
+- p: [19, 20]
+  k: )
+  l: [qwerty, symbols, number_fn]
+- p: [28, 29]
+  k: '{'
+  l: [qwerty, symbols, number_fn]
+- p: [30, 31]
+  k: '}'
+  l: [qwerty, symbols, number_fn]
