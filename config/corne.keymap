@@ -189,7 +189,7 @@
 
         c_tab {
             bindings = <&kp TAB>;
-            key-positions = <13 14>;
+            key-positions = <8 9>;
             layers = <0>;
         };
     };

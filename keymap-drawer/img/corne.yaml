@@ -274,6 +274,6 @@ combos:
 - p: [4, 3]
   k: $$mdi:keyboard-return$$
   l: [qwerty, navigation, symbols, number_fn]
-- p: [13, 14]
+- p: [8, 9]
   k: $$mdi:keyboard-tab$$
   l: [qwerty]
