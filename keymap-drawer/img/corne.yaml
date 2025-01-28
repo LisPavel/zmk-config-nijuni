@@ -38,10 +38,10 @@ layers:
   - /
   - ''
   - ''
-  - navigation
-  - symbols
+  - number_fn
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - '&la 3'
+  - symbols
+  - '&la 1'
   - ''
   navigation:
   - ''
@@ -81,7 +81,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -125,8 +125,8 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   number_fn:
@@ -167,7 +167,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

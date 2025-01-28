@@ -257,10 +257,10 @@
             //                                     '-----------+-----------+----------------'       '----------------+-----------------+-----------'
 
             bindings = <
-&none  &kp Q          &kp W          &kp E           &kp R  &kp T    &kp Y            &kp U  &kp I           &kp O          &kp P                  &none
-&none  &hrm_l LGUI A  &hrm_l LALT S  &hrm_l LCTRL D  &kp F  &kp G    &kp H            &kp J  &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r RGUI SEMICOLON  &none
-&none  &lt 5 Z        &kp X          &kp C           &kp V  &kp B    &kp N            &kp M  &kp COMMA       &kp DOT        &kp FSLH               &none
-                                     &none           &mo 1  &mo 2    &mt LSHFT SPACE  &la 3  &none
+&none  &kp Q          &kp W          &kp E           &kp R  &kp T              &kp Y  &kp U  &kp I           &kp O          &kp P                  &none
+&none  &hrm_l LGUI A  &hrm_l LALT S  &hrm_l LCTRL D  &kp F  &kp G              &kp H  &kp J  &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r RGUI SEMICOLON  &none
+&none  &lt 5 Z        &kp X          &kp C           &kp V  &kp B              &kp N  &kp M  &kp COMMA       &kp DOT        &kp FSLH               &none
+                                     &none           &mo 3  &mt LSHFT SPACE    &mo 2  &la 1  &none
             >;
         };
 
