@@ -251,6 +251,54 @@
             key-positions = <30 31>;
             layers = <0 2 3>;
         };
+
+        c_caret {
+            bindings = <&kp CARET>;
+            key-positions = <5 17>;
+            layers = <0 2 3>;
+        };
+
+        c_dllr {
+            bindings = <&kp DLLR>;
+            key-positions = <6 18>;
+            layers = <0 2 3>;
+        };
+
+        c_excl {
+            bindings = <&kp EXCL>;
+            key-positions = <4 16>;
+            layers = <0 2 3>;
+        };
+
+        c_qmark {
+            bindings = <&kp QMARK>;
+            key-positions = <7 19>;
+            layers = <0 2 3>;
+        };
+
+        c_under {
+            bindings = <&kp UNDER>;
+            key-positions = <26 27>;
+            layers = <0 2 3>;
+        };
+
+        c_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <32 33>;
+            layers = <0 2 3>;
+        };
+
+        c_amps {
+            bindings = <&kp AMPS>;
+            key-positions = <3 15>;
+            layers = <0 2 3>;
+        };
+
+        c_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <8 20>;
+            layers = <0 2 3>;
+        };
     };
 
     keymap {
@@ -306,10 +354,10 @@
             //                         '-------+-------+-------'       '-------+-------+-------'
 
             bindings = <
-&none  &kp EXCL   &kp LT     &kp EQUAL  &kp FSLH   &kp CARET            &kp DLLR   &kp BSLH  &kp PLUS  &kp GT     &kp QMARK  &none
-&none  &kp COLON  &kp LBKT   &kp LBRC   &kp LPAR   &kp DOUBLE_QUOTES    &kp SQT    &kp RPAR  &kp RBRC  &kp RBKT   &kp SEMI   &none
-&none  &kp HASH   &kp UNDER  &kp AMPS   &kp MINUS  &kp AT_SIGN          &kp TILDE  &kp STAR  &kp PIPE  &kp GRAVE  &kp PRCNT  &none
-                             &trans     &trans     &trans               &trans     &trans    &trans
+&none  &kp EXCL   &kp LT     &kp EQUAL  &kp FSLH   &kp CARET      &kp DLLR  &kp BSLH  &kp PLUS  &kp GT  &kp QMARK  &none
+&none  &kp COLON  &none      &none      &none      &none          &none     &none     &none     &none   &kp SEMI   &none
+&none  &kp HASH   &kp UNDER  &kp AMPS   &kp MINUS  &kp AT_SIGN    &none     &kp STAR  &kp PIPE  &none   &kp PRCNT  &none
+                             &trans     &trans     &trans         &trans    &trans    &trans
             >;
         };
 

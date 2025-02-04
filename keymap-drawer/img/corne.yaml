@@ -101,14 +101,14 @@ layers:
   - ''
   - ''
   - ':'
-  - '['
-  - '{'
-  - (
-  - '"'
-  - ''''
-  - )
-  - '}'
-  - ']'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ;
   - ''
   - ''
@@ -117,10 +117,10 @@ layers:
   - '&'
   - '-'
   - '@'
-  - '~'
+  - ''
   - '*'
   - '|'
-  - '`'
+  - ''
   - '%'
   - ''
   - {t: ▽, type: trans}
@@ -300,4 +300,28 @@ combos:
   l: [qwerty, symbols, number_fn]
 - p: [30, 31]
   k: '}'
+  l: [qwerty, symbols, number_fn]
+- p: [5, 17]
+  k: ^
+  l: [qwerty, symbols, number_fn]
+- p: [6, 18]
+  k: $
+  l: [qwerty, symbols, number_fn]
+- p: [4, 16]
+  k: '!'
+  l: [qwerty, symbols, number_fn]
+- p: [7, 19]
+  k: '?'
+  l: [qwerty, symbols, number_fn]
+- p: [26, 27]
+  k: _
+  l: [qwerty, symbols, number_fn]
+- p: [32, 33]
+  k: '-'
+  l: [qwerty, symbols, number_fn]
+- p: [3, 15]
+  k: '&'
+  l: [qwerty, symbols, number_fn]
+- p: [8, 20]
+  k: '|'
   l: [qwerty, symbols, number_fn]
