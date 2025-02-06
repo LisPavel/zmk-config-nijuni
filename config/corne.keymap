@@ -414,10 +414,10 @@
             //                         '-------+-------+-------'       '-------+-------+-------'
 
             bindings = <
-&none  &none     &kp LT  &kp EQUAL  &kp FSLH  &none          &none   &kp BSLH  &kp PLUS  &kp GT  &none      &none
-&none  &none     &none   &none      &none     &none          &none   &none     &none     &none   &none      &none
-&none  &kp HASH  &none   &none      &none     &kp AT_SIGN    &none   &kp STAR  &none     &none   &kp PRCNT  &none
-                         &trans     &trans    &trans         &trans  &trans    &trans
+&none  &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
+&none  &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
+&none  &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
+                     &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
