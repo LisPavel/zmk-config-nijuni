@@ -421,7 +421,7 @@
             bindings = <
 &none  &kp F1        &kp F2        &kp F3         &kp F4          &kp F5     &kp F6   &kp F7              &kp F8         &kp F9        &kp F10              &none
 &none  &hrm LGUI N1  &hrm LALT N2  &hrm LCTRL N3  &hrm LSHIFT N4  &kp N5     &kp N6   &hrm LEFT_SHIFT N7  &hrm LCTRL N8  &hrm LALT N9  &hrm LMETA NUMBER_0  &none
-&none  &kp MINUS     &kp PLUS      &kp STAR       &kp LPAR        &kp F11    &kp F12  &kp RPAR            &trans         &trans        &trans               &none
+&none  &none         &none         &none          &none           &kp F11    &kp F12  &none               &kp COMMA      &kp DOT       &kp FSLH             &none
                                    &trans         &trans          &trans     &trans   &trans              &trans
             >;
         };
