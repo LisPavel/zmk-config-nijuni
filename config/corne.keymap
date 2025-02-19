@@ -14,20 +14,6 @@
 
 / {
     behaviors {
-        hrm_l: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <170>;
-            flavor = "balanced";
-            require-prior-idle-ms = <130>;
-            hold-trigger-key-positions = <36 37 38 39 40 41 30 31 32 33 35 34 23 22 21 20 19 18 6 7 8 9 10 11>;
-            hold-trigger-on-release;
-        };
-
         hrl: homerow_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_LAYER";
@@ -59,20 +45,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        hrm_r: hrm_r {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRM_R";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <170>;
-            flavor = "balanced";
-            require-prior-idle-ms = <130>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <41 40 39 38 37 36 29 17 5 16 28 4 3 15 27 26 14 2 1 13 25 24 12 0>;
-        };
-
         ctrl_tab: ctrl_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "CTRL_TAB";
@@ -99,9 +71,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
             flavor = "balanced";
+            require-prior-idle-ms = <125>;
         };
     };
 
