@@ -40,8 +40,8 @@ layers:
   - ''
   - number_fn
   - $$mdi:keyboard-space$$
-  - symbols
   - '&la 1'
+  - ''
   - ''
   navigation:
   - ''
@@ -126,7 +126,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   number_fn:
