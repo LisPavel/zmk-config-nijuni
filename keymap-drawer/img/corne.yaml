@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
   qwerty:
   - ''
@@ -350,7 +350,7 @@ combos:
   k: '*'
   l: [qwerty, symbols, number_fn]
 - p: [27, 26]
-  k: '#'
+  k: EN HASH
   l: [qwerty, symbols, number_fn]
 - p: [32, 33]
   k: '@'
