@@ -83,8 +83,8 @@
 
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
-            label = "HML";
-            bindings = <&none>, <&none>;
+            label = "home mod left";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -97,8 +97,8 @@
 
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
-            bindings = <&none>, <&none>;
+            label = "Home mod right";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -382,7 +382,7 @@
 
             bindings = <
 &none  &kp Q        &kp W        &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I         &kp O        &kp P                &none
-&none  &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrm LSHFT F  &kp G    &kp H  &hrm RSHFT J  &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMICOLON  &none
+&none  &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G    &kp H  &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMICOLON  &none
 &none  &lt 5 Z      &kp X        &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA     &kp DOT      &kp FSLH             &none
                                  &none         &kp SPACE     &mo 3    &la 1  &none         &none
             >;
@@ -439,7 +439,7 @@
 
             bindings = <
 &none  &kp F1        &kp F2        &kp F3         &kp F4          &kp F5     &kp F6   &kp F7              &kp F8         &kp F9        &kp F10              &none
-&none  &hrm LGUI N1  &hrm LALT N2  &hrm LCTRL N3  &hrm LSHIFT N4  &kp N5     &kp N6   &hrm LEFT_SHIFT N7  &hrm LCTRL N8  &hrm LALT N9  &hrm LMETA NUMBER_0  &none
+&none  &hml LGUI N1  &hml LALT N2  &hml LCTRL N3  &hml LSHIFT N4  &kp N5     &kp N6   &hmr LEFT_SHIFT N7  &hmr LCTRL N8  &hmr LALT N9  &hmr LMETA NUMBER_0  &none
 &none  &none         &none         &none          &none           &kp F11    &kp F12  &none               &kp COMMA      &kp DOT       &kp FSLH             &none
                                    &trans         &trans          &trans     &trans   &trans              &trans
             >;
