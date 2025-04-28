@@ -38,10 +38,10 @@ layers:
   - /
   - ''
   - ''
-  - $$mdi:keyboard-space$$
   - number_fn
-  - '&la 1'
+  - $$mdi:keyboard-space$$
   - ''
+  - '&la 1'
   - ''
   navigation:
   - ''
@@ -167,8 +167,8 @@ layers:
   - /
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -210,8 +210,8 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
