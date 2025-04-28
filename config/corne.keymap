@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-
 &mmv {
     acceleration-exponent = <1>;      // 1
     time-to-max-speed-ms = <500>;     // 300
@@ -80,6 +79,34 @@
             tapping-term-ms = <185>;
             quick-tap-ms = <175>;
             flavor = "balanced";
+        };
+
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <125>;
+            quick-tap-ms = <175>;
+            tapping-term-ms = <280>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 22 21 20 19 18 30 31 32 33 34 41 40 39>;
+        };
+
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <125>;
+            quick-tap-ms = <175>;
+            tapping-term-ms = <280>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 22 21 20 19 18 30 31 32 33 34 41 40 39 1 2 3 4 5 17 16 15 14 13 25 26 27 28 29 38 37 36>;
         };
     };
 
