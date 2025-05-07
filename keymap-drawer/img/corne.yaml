@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
   qwerty:
   - ''
@@ -17,10 +17,10 @@ layers:
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: S, h: LAlt}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: navigation}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - {t: J, h: navigation}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RAlt}
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
@@ -38,97 +38,54 @@ layers:
   - /
   - ''
   - ''
-  - {t: '$$mdi:keyboard-tab$$', h: LSHFT}
-  - {t: '$$mdi:keyboard-space$$', h: number_fn}
-  - {t: '$$mdi:keyboard-return$$', h: symbols}
-  - {t: '$$mdi:backspace$$', h: RSHFT}
+  - number_fn
+  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
+  - '&la 1'
   - ''
   navigation:
   - ''
   - ''
-  - $$mdi:volume-medium$$
-  - $$mdi:volume-mute$$
-  - $$mdi:volume-high$$
-  - BRI UP
-  - PAGE DOWN
+  - ''
+  - PG DN
+  - PG UP
+  - ''
+  - Tabber
   - Prev Desk
   - Next Desk
-  - PAGE UP
-  - INSERT
+  - Switcher
+  - INS
   - ''
   - ''
   - {t: '$$mdi:microsoft-windows$$', h: sticky}
   - {t: LAlt, h: sticky}
   - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky, type: held}
-  - BRI DN
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - ''
   - $$mdi:menu-left$$
   - $$mdi:menu-down$$
   - $$mdi:menu-up$$
   - $$mdi:menu-right$$
-  - PRINTSCREEN
+  - Prt Sc
   - ''
   - ''
-  - ''
-  - $$mdi:skip-previous$$
-  - Ctl + $$mdi:play-pause$$
-  - $$mdi:skip-next$$
-  - ''
-  - HOME
+  - {t: '$$mdi:undo$$', h: Undo}
+  - {t: '$$mdi:content-cut$$', h: Cut}
+  - {t: '$$mdi:content-copy$$', h: Copy}
+  - {t: '$$mdi:content-paste$$', h: Paste}
+  - {t: '$$mdi:redo$$', h: Redo}
+  - Home
   - Prev Word
   - Next Word
-  - END
+  - End
   - ''
   - ''
-  - ''
-  - {t: LSHFT, h: sticky}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  symbols:
-  - ''
-  - '!'
-  - <
-  - '='
-  - /
-  - ^
-  - $
-  - \
-  - +
-  - '>'
-  - '?'
-  - ''
-  - ''
-  - ':'
-  - '['
-  - '{'
-  - (
-  - '"'
-  - ''''
-  - )
-  - '}'
-  - ']'
-  - ;
-  - ''
-  - ''
-  - '#'
-  - _
-  - '&'
-  - '-'
-  - '@'
-  - '~'
-  - '*'
-  - '|'
-  - '`'
-  - '%'
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   number_fn:
   - ''
   - F1
@@ -162,35 +119,35 @@ layers:
   - F11
   - F12
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ','
+  - .
+  - /
   - ''
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  bluetooth:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  adjust:
+  - BOOT
+  - $$mdi:brightness-6$$
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-mute$$
+  - $$mdi:volume-high$$
+  - $$mdi:brightness-5$$
   - BT CLR
   - ''
-  - ''
+  - OUT TOG
   - ''
   - BT CLR ALL
+  - BOOT
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
+  - $$mdi:skip-previous$$
+  - $$mdi:menu-left$$
+  - $$mdi:play-pause$$
+  - $$mdi:menu-right$$
+  - $$mdi:skip-next$$
   - {t: BT, h: '3'}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -210,8 +167,8 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -232,7 +189,7 @@ layers:
   - ''
   - LAlt
   - $$mdi:apple-keyboard-control$$
-  - LSHFT
+  - $$mdi:apple-keyboard-shift$$
   - ''
   - {t: '$$mdi:chevron-left$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:chevron-down$$', h: '$$mdi:mouse$$'}
@@ -265,18 +222,93 @@ combos:
 - p: [2, 3]
   k: ESC
   l: [qwerty]
-- p: [9, 8]
-  k: $$mdi:backspace-reverse$$
+- p: [8, 7]
+  k: {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
+  l: [qwerty, navigation, number_fn]
+- p: [25, 34]
+  k: {t: mouse, h: toggle}
+  l: [qwerty, mouse]
+- p: [4, 3]
+  k: $$mdi:keyboard-return$$
+  l: [qwerty, navigation, number_fn]
+- p: [8, 9]
+  k: $$mdi:keyboard-tab$$
   l: [qwerty]
-- p: [21, 20]
-  k: ']'
-  l: [qwerty]
-- p: [14, 15]
-  k: '['
-  l: [qwerty]
-- p: [7, 8]
+- p: [6, 7]
   k: ''''
-  l: [qwerty]
-- p: [3, 4]
+  l: [qwerty, number_fn]
+- p: [4, 5]
   k: '`'
-  l: [qwerty]
+  l: [qwerty, number_fn]
+- p: [16, 17]
+  k: '['
+  l: [qwerty, number_fn]
+- p: [18, 19]
+  k: ']'
+  l: [qwerty, number_fn]
+- p: [15, 16]
+  k: (
+  l: [qwerty, number_fn]
+- p: [19, 20]
+  k: )
+  l: [qwerty, number_fn]
+- p: [28, 29]
+  k: '{'
+  l: [qwerty, number_fn]
+- p: [30, 31]
+  k: '}'
+  l: [qwerty, number_fn]
+- p: [5, 17]
+  k: ^
+  l: [qwerty, number_fn]
+- p: [6, 18]
+  k: $
+  l: [qwerty, number_fn]
+- p: [4, 16]
+  k: '!'
+  l: [qwerty, number_fn]
+- p: [7, 19]
+  k: '?'
+  l: [qwerty, number_fn]
+- p: [27, 28]
+  k: _
+  l: [qwerty, number_fn]
+- p: [32, 31]
+  k: '-'
+  l: [qwerty, number_fn]
+- p: [3, 15]
+  k: '&'
+  l: [qwerty, number_fn]
+- p: [8, 20]
+  k: '|'
+  l: [qwerty, number_fn]
+- p: [3, 16]
+  k: '='
+  l: [qwerty, number_fn]
+- p: [19, 8]
+  k: +
+  l: [qwerty, number_fn]
+- p: [15, 4]
+  k: /
+  l: [qwerty, number_fn]
+- p: [7, 20]
+  k: \
+  l: [qwerty, number_fn]
+- p: [15, 28]
+  k: <
+  l: [qwerty, number_fn]
+- p: [20, 31]
+  k: '>'
+  l: [qwerty, number_fn]
+- p: [4, 17]
+  k: '%'
+  l: [qwerty, number_fn]
+- p: [7, 18]
+  k: '*'
+  l: [qwerty, number_fn]
+- p: [27, 26]
+  k: '#'
+  l: [qwerty, number_fn]
+- p: [32, 33]
+  k: '@'
+  l: [qwerty, number_fn]
