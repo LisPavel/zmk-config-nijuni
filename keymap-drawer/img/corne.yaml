@@ -40,7 +40,7 @@ layers:
   - ''
   - number_fn
   - $$mdi:keyboard-space$$
-  - ''
+  - $$mdi:apple-keyboard-shift$$
   - '&la 1'
   - ''
   navigation:
@@ -86,49 +86,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  symbols:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   number_fn:
   - ''
   - F1
@@ -181,7 +138,7 @@ layers:
   - $$mdi:brightness-5$$
   - BT CLR
   - ''
-  - ''
+  - OUT TOG
   - ''
   - BT CLR ALL
   - BOOT
@@ -267,91 +224,91 @@ combos:
   l: [qwerty]
 - p: [8, 7]
   k: {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
-  l: [qwerty, navigation, symbols, number_fn]
+  l: [qwerty, navigation, number_fn]
 - p: [25, 34]
   k: {t: mouse, h: toggle}
   l: [qwerty, mouse]
 - p: [4, 3]
   k: $$mdi:keyboard-return$$
-  l: [qwerty, navigation, symbols, number_fn]
+  l: [qwerty, navigation, number_fn]
 - p: [8, 9]
   k: $$mdi:keyboard-tab$$
   l: [qwerty]
 - p: [6, 7]
   k: ''''
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [4, 5]
   k: '`'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [16, 17]
   k: '['
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [18, 19]
   k: ']'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [15, 16]
   k: (
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [19, 20]
   k: )
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [28, 29]
   k: '{'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [30, 31]
   k: '}'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [5, 17]
   k: ^
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [6, 18]
   k: $
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [4, 16]
   k: '!'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [7, 19]
   k: '?'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [27, 28]
   k: _
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [32, 31]
   k: '-'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [3, 15]
   k: '&'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [8, 20]
   k: '|'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [3, 16]
   k: '='
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [19, 8]
   k: +
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [15, 4]
   k: /
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [7, 20]
   k: \
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [15, 28]
   k: <
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [20, 31]
   k: '>'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [4, 17]
   k: '%'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [7, 18]
   k: '*'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [27, 26]
   k: '#'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
 - p: [32, 33]
   k: '@'
-  l: [qwerty, symbols, number_fn]
+  l: [qwerty, number_fn]
