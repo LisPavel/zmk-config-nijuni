@@ -109,6 +109,13 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <1 2 3 4 5 17 16 15 14 13 25 26 27 28 29 38 37 36>;
         };
+
+        l_lock: l_lock {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "Layer lock";
+            #binding-cells = <1>;
+            toggle-mode = "flip";
+        };
     };
 
     macros {
@@ -364,6 +371,12 @@
             bindings = <&kp AT>;
             key-positions = <32 33>;
             layers = <0 2>;
+        };
+
+        c_mouse_lock {
+            bindings = <&l_lock 4>;
+            key-positions = <7 8>;
+            layers = <4>;
         };
     };
 

@@ -312,3 +312,6 @@ combos:
 - p: [32, 33]
   k: '@'
   l: [qwerty, number_fn]
+- p: [7, 8]
+  k: '&l_lock 4'
+  l: [mouse]
