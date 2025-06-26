@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - ''
-  - ''
+  - (K)Runner
   - number_fn
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - '&la 1'
-  - ''
+  - LGui + $$mdi:keyboard-space$$
   navigation:
   - ''
   - ''
