@@ -433,10 +433,10 @@
             //                         '-------+-------+-------'       '-------+-------+-------'
 
             bindings = <
-&none  &kp F1        &kp F2        &kp F3         &kp F4          &kp F5     &kp F6   &kp F7              &kp F8         &kp F9        &kp F10              &none
-&none  &hml LGUI N1  &hml LALT N2  &hml LCTRL N3  &hml LSHIFT N4  &kp N5     &kp N6   &hmr LEFT_SHIFT N7  &hmr LCTRL N8  &hmr LALT N9  &hmr LMETA NUMBER_0  &none
-&none  &none         &none         &none          &none           &kp F11    &kp F12  &none               &kp COMMA      &kp DOT       &kp FSLH             &none
-                                   &trans         &trans          &trans     &trans   &trans              &trans
+&none  &kp ASTRK     &kp N7        &kp N8         &kp N9          &kp PLUS     &none   &kp F9              &kp F10        &kp F11       &kp F12        &none
+&none  &hml LGUI N0  &hml LALT N4  &hml LCTRL N5  &hml LSHIFT N6  &kp MINUS    &none   &hmr LEFT_SHIFT F5  &hmr LCTRL F6  &hmr LALT F7  &hmr LMETA F8  &none
+&none  &kp FSLH      &kp N1        &kp N2         &kp N3          &kp DOT      &none   &kp F1              &kp F2         &kp F3        &kp F4         &none
+                                   &trans         &trans          &trans       &trans  &trans              &trans
             >;
         };
 
