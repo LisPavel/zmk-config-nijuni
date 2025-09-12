@@ -20,7 +20,19 @@
 include:
   - board: nice_nano_v2
     shield: corne_left
+    keymap: nijuni
+    artifact-name: nijuni_left
   - board: nice_nano_v2
     shield: corne_right
+    keymap: nijuni
+    artifact-name: nijuni_right
+  - board: nice_nano_v2
+    shield: corne_left
+    keymap: chocoflan
+    artifact-name: chocoflan_left
+  - board: nice_nano_v2
+    shield: corne_right
+    keymap: chocoflan
+    artifact-name: chocoflan_right
   - board: nice_nano_v2
     shield: settings_reset
