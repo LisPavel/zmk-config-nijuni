@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - ''
-  - ''
+  - (K)Runner
   - number_fn
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - '&la 1'
-  - ''
+  - LGui + $$mdi:keyboard-space$$
   navigation:
   - ''
   - ''
@@ -88,40 +88,40 @@ layers:
   - ''
   number_fn:
   - ''
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - ''
+  - {t: '0', h: '$$mdi:microsoft-windows$$'}
+  - {t: '4', h: LAlt}
+  - {t: '5', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '6', h: '$$mdi:apple-keyboard-shift$$'}
+  - '-'
+  - ''
+  - {t: F5, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F7, h: LAlt}
+  - {t: F8, h: '$$mdi:microsoft-windows$$'}
+  - ''
+  - ''
+  - /
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - ''
   - F1
   - F2
   - F3
   - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - ''
-  - ''
-  - {t: '1', h: '$$mdi:microsoft-windows$$'}
-  - {t: '2', h: LAlt}
-  - {t: '3', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
-  - '5'
-  - '6'
-  - {t: '7', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '8', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '9', h: LAlt}
-  - {t: '0', h: '$$mdi:microsoft-windows$$'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - F11
-  - F12
-  - ''
-  - ','
-  - .
-  - /
   - ''
   - {t: ▽, type: trans}
   - {type: held}
@@ -312,3 +312,6 @@ combos:
 - p: [32, 33]
   k: '@'
   l: [qwerty, number_fn]
+- p: [7, 8]
+  k: '&l_lock 4'
+  l: [mouse]

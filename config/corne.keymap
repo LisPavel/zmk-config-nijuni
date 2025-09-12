@@ -89,9 +89,9 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <110>;
             quick-tap-ms = <165>;
-            tapping-term-ms = <230>;
+            tapping-term-ms = <200>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <6 7 8 9 10 22 21 20 19 18 30 31 32 33 34 41 40 39>;
         };
@@ -103,11 +103,18 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <110>;
             quick-tap-ms = <165>;
-            tapping-term-ms = <230>;
+            tapping-term-ms = <200>;
             hold-trigger-on-release;
-            hold-trigger-key-positions = <6 7 8 9 10 22 21 20 19 18 30 31 32 33 34 41 40 39 1 2 3 4 5 17 16 15 14 13 25 26 27 28 29 38 37 36>;
+            hold-trigger-key-positions = <1 2 3 4 5 17 16 15 14 13 25 26 27 28 29 38 37 36>;
+        };
+
+        l_lock: l_lock {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "Layer lock";
+            #binding-cells = <1>;
+            toggle-mode = "flip";
         };
     };
 
@@ -365,6 +372,12 @@
             key-positions = <32 33>;
             layers = <0 2>;
         };
+
+        c_mouse_lock {
+            bindings = <&l_lock 4>;
+            key-positions = <7 8>;
+            layers = <4>;
+        };
     };
 
     keymap {
@@ -382,10 +395,10 @@
             //                                     '-----------+-----------+----------------'       '----------------+-----------------+-----------'
 
             bindings = <
-&none  &kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y      &kp U         &kp I         &kp O        &kp P                &none
-&none  &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H      &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMICOLON  &none
-&none  &lt 4 Z      &kp X        &kp C         &kp V         &kp B        &kp N      &kp M         &kp COMMA     &kp DOT      &kp FSLH             &none
-                                 &none         &mo 2         &kp SPACE    &kp LSHFT  &la 1         &none
+&none  &kp Q        &kp W        &kp E          &kp R         &kp T        &kp Y      &kp U         &kp I          &kp O        &kp P                &none
+&none  &hml LGUI A  &hml LALT S  &hml LCTRL D   &hml LSHFT F  &kp G        &kp H      &hmr RSHFT J  &hmr RCTRL K   &hmr RALT L  &hmr RGUI SEMICOLON  &none
+&none  &lt 4 Z      &kp X        &kp C          &kp V         &kp B        &kp N      &kp M         &kp COMMA      &kp DOT      &kp FSLH             &none
+                                 &kp LA(SPACE)  &mo 2         &kp SPACE    &kp LSHFT  &la 1         &kp LG(SPACE)
             >;
         };
 
@@ -420,10 +433,10 @@
             //                         '-------+-------+-------'       '-------+-------+-------'
 
             bindings = <
-&none  &kp F1        &kp F2        &kp F3         &kp F4          &kp F5     &kp F6   &kp F7              &kp F8         &kp F9        &kp F10              &none
-&none  &hml LGUI N1  &hml LALT N2  &hml LCTRL N3  &hml LSHIFT N4  &kp N5     &kp N6   &hmr LEFT_SHIFT N7  &hmr LCTRL N8  &hmr LALT N9  &hmr LMETA NUMBER_0  &none
-&none  &none         &none         &none          &none           &kp F11    &kp F12  &none               &kp COMMA      &kp DOT       &kp FSLH             &none
-                                   &trans         &trans          &trans     &trans   &trans              &trans
+&none  &kp ASTRK     &kp N7        &kp N8         &kp N9          &kp PLUS     &none   &kp F9              &kp F10        &kp F11       &kp F12        &none
+&none  &hml LGUI N0  &hml LALT N4  &hml LCTRL N5  &hml LSHIFT N6  &kp MINUS    &none   &hmr LEFT_SHIFT F5  &hmr LCTRL F6  &hmr LALT F7  &hmr LMETA F8  &none
+&none  &kp FSLH      &kp N1        &kp N2         &kp N3          &kp DOT      &none   &kp F1              &kp F2         &kp F3        &kp F4         &none
+                                   &trans         &trans          &trans       &trans  &trans              &trans
             >;
         };
 
