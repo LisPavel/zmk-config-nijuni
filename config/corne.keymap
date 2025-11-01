@@ -21,10 +21,11 @@
 
 &uc {
   default-mode = <UC_MODE_WIN_ALT>;
-}
+};
 
-#define UC_LBKT 0x005B 0x007B;
-#define UC_RBKT 0x005D 0x007D;
+#define UC_LBKT 0x005B 0x007B
+#define UC_RBKT 0x005D 0x007D
+
 
 / {
     behaviors {
