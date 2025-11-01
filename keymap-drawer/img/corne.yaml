@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - ''
-  - ''
+  - '&uc 0x005B 0x007B'
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: S, h: LAlt}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -24,7 +24,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RAlt}
   - {t: ;, h: '$$mdi:microsoft-windows$$'}
-  - ''
+  - '&uc 0x005D 0x007D'
   - ''
   - {t: Z, h: mouse}
   - X
