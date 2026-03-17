@@ -28,11 +28,11 @@ include:
     artifact-name: nijuni_right
   - board: nice_nano_v2
     shield: corne_left
-    cmake-args: -DEXTRA_CONF_FILE=../../config/chocoflan.conf
+    cmake-args: -DEXTRA_CONF_FILE=../../config/chocoflan_left.conf
     artifact-name: chocoflan_left
   - board: nice_nano_v2
     shield: corne_right
-    cmake-args: -DEXTRA_CONF_FILE=../../config/chocoflan.conf
+    cmake-args: -DEXTRA_CONF_FILE=../../config/chocoflan_right.conf
     artifact-name: chocoflan_right
   - board: nice_nano_v2
     shield: settings_reset
