@@ -20,11 +20,11 @@
 include:
   - board: nice_nano_v2
     shield: corne_left
-    cmake-args: -DEXTRA_CONF_FILE=../../config/nijuni.conf
+    cmake-args: -DEXTRA_CONF_FILE=../../config/nijuni_left.conf
     artifact-name: nijuni_left
   - board: nice_nano_v2
     shield: corne_right
-    cmake-args: -DEXTRA_CONF_FILE=../../config/nijuni.conf
+    cmake-args: -DEXTRA_CONF_FILE=../../config/nijuni_right.conf
     artifact-name: nijuni_right
   - board: nice_nano_v2
     shield: corne_left
