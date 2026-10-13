@@ -1,0 +1,759 @@
+{
+  "version": 1,
+  "view": {
+    "columns": [
+      {
+        "language": "en",
+        "layoutId": "system-us",
+        "visible": true,
+        "altGr": true,
+        "altGrShift": true
+      },
+      {
+        "language": "ru",
+        "layoutId": "user:925a835a-8b0e-4619-a6f0-1da167419e41",
+        "visible": true,
+        "altGr": true,
+        "altGrShift": true
+      }
+    ],
+    "open": "ru",
+    "keycap": [
+      "en",
+      "ru"
+    ]
+  },
+  "layouts": [
+    {
+      "id": "user:925a835a-8b0e-4619-a6f0-1da167419e41",
+      "name": "System 3",
+      "language": "ru",
+      "origin": {
+        "from": "copy",
+        "layoutId": "system-ru"
+      },
+      "keys": [
+        {
+          "zmk": "A",
+          "keysyms": [
+            "Cyrillic_ef",
+            "Cyrillic_EF",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "ф",
+            "Ф",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "B",
+          "keysyms": [
+            "Cyrillic_i",
+            "Cyrillic_I",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "и",
+            "И",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "BSLH",
+          "keysyms": [
+            "backslash",
+            "slash",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "\\",
+            "/",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "C",
+          "keysyms": [
+            "Cyrillic_es",
+            "Cyrillic_ES",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "с",
+            "С",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "COMMA",
+          "keysyms": [
+            "Cyrillic_be",
+            "Cyrillic_BE",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "б",
+            "Б",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "D",
+          "keysyms": [
+            "Cyrillic_ve",
+            "Cyrillic_VE",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "в",
+            "В",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "DOT",
+          "keysyms": [
+            "Cyrillic_yu",
+            "Cyrillic_YU",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "ю",
+            "Ю",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "E",
+          "keysyms": [
+            "Cyrillic_u",
+            "Cyrillic_U",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "у",
+            "У",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "EQUAL",
+          "keysyms": [
+            "equal",
+            "plus",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "=",
+            "+",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "F",
+          "keysyms": [
+            "Cyrillic_a",
+            "Cyrillic_A",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "а",
+            "А",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "G",
+          "keysyms": [
+            "Cyrillic_pe",
+            "Cyrillic_PE",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "п",
+            "П",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "GRAVE",
+          "keysyms": [
+            "Cyrillic_io",
+            "Cyrillic_IO",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "ё",
+            "Ё",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "H",
+          "keysyms": [
+            "Cyrillic_er",
+            "Cyrillic_ER",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "р",
+            "Р",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "I",
+          "keysyms": [
+            "Cyrillic_sha",
+            "Cyrillic_SHA",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "ш",
+            "Ш",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "J",
+          "keysyms": [
+            "Cyrillic_o",
+            "Cyrillic_O",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "о",
+            "О",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "K",
+          "keysyms": [
+            "Cyrillic_el",
+            "Cyrillic_EL",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "л",
+            "Л",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "L",
+          "keysyms": [
+            "Cyrillic_de",
+            "Cyrillic_DE",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "д",
+            "Д",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "LBKT",
+          "keysyms": [
+            "Cyrillic_ha",
+            "Cyrillic_HA",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "х",
+            "Х",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "M",
+          "keysyms": [
+            "Cyrillic_softsign",
+            "Cyrillic_SOFTSIGN",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "ь",
+            "Ь",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "MINUS",
+          "keysyms": [
+            "minus",
+            "underscore",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "-",
+            "_",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "N",
+          "keysyms": [
+            "Cyrillic_te",
+            "Cyrillic_TE",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "т",
+            "Т",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "N0",
+          "keysyms": [
+            "0",
+            "parenright",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "0",
+            ")",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "N1",
+          "keysyms": [
+            "1",
+            "exclam",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "1",
+            "!",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "N2",
+          "keysyms": [
+            "2",
+            "quotedbl",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "2",
+            "\"",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "N3",
+          "keysyms": [
+            "3",
+            "numbersign",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "3",
+            "#",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "N4",
+          "keysyms": [
+            "4",
+            "semicolon",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "4",
+            ";",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "N5",
+          "keysyms": [
+            "5",
+            "percent",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "5",
+            "%",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "N6",
+          "keysyms": [
+            "6",
+            "colon",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "6",
+            ":",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "N7",
+          "keysyms": [
+            "7",
+            "question",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "7",
+            "?",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "N8",
+          "keysyms": [
+            "8",
+            "asterisk",
+            "U20BD",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "8",
+            "*",
+            "₽",
+            ""
+          ]
+        },
+        {
+          "zmk": "N9",
+          "keysyms": [
+            "9",
+            "parenleft",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "9",
+            "(",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "NON_US_BSLH",
+          "keysyms": [
+            "slash",
+            "bar",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "/",
+            "|",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "O",
+          "keysyms": [
+            "Cyrillic_shcha",
+            "Cyrillic_SHCHA",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "щ",
+            "Щ",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "P",
+          "keysyms": [
+            "Cyrillic_ze",
+            "Cyrillic_ZE",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "з",
+            "З",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "Q",
+          "keysyms": [
+            "Cyrillic_shorti",
+            "Cyrillic_SHORTI",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "й",
+            "Й",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "R",
+          "keysyms": [
+            "Cyrillic_ka",
+            "Cyrillic_KA",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "к",
+            "К",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "RBKT",
+          "keysyms": [
+            "Cyrillic_hardsign",
+            "Cyrillic_HARDSIGN",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "ъ",
+            "Ъ",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "S",
+          "keysyms": [
+            "Cyrillic_yeru",
+            "Cyrillic_YERU",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "ы",
+            "Ы",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "SEMI",
+          "keysyms": [
+            "Cyrillic_zhe",
+            "Cyrillic_ZHE",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "ж",
+            "Ж",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "SLASH",
+          "keysyms": [
+            "period",
+            "comma",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            ".",
+            ",",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "SQT",
+          "keysyms": [
+            "Cyrillic_e",
+            "Cyrillic_E",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "э",
+            "Э",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "T",
+          "keysyms": [
+            "Cyrillic_ie",
+            "Cyrillic_IE",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "е",
+            "Е",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "U",
+          "keysyms": [
+            "Cyrillic_ghe",
+            "Cyrillic_GHE",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "г",
+            "Г",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "V",
+          "keysyms": [
+            "Cyrillic_em",
+            "Cyrillic_EM",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "м",
+            "М",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "W",
+          "keysyms": [
+            "Cyrillic_tse",
+            "Cyrillic_TSE",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "ц",
+            "Ц",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "X",
+          "keysyms": [
+            "Cyrillic_che",
+            "Cyrillic_CHE",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "ч",
+            "Ч",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "Y",
+          "keysyms": [
+            "Cyrillic_en",
+            "Cyrillic_EN",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "н",
+            "Н",
+            "",
+            ""
+          ]
+        },
+        {
+          "zmk": "Z",
+          "keysyms": [
+            "Cyrillic_ya",
+            "Cyrillic_YA",
+            "NoSymbol",
+            "NoSymbol"
+          ],
+          "glyphs": [
+            "я",
+            "Я",
+            "",
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}

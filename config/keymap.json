@@ -1,0 +1,535 @@
+{
+  "layer_names": [
+    "qwerty",
+    "navigation",
+    "number_fn",
+    "adjust",
+    "mouse"
+  ],
+  "keyboard": "unknown",
+  "keymap": "corne",
+  "layout": "LAYOUT",
+  "conditionalLayers": [
+    {
+      "id": "ns_adj",
+      "ifLayers": [
+        1,
+        2
+      ],
+      "thenLayer": 3
+    },
+    {
+      "id": "nn_adj",
+      "ifLayers": [
+        1,
+        2
+      ],
+      "thenLayer": 3
+    }
+  ],
+  "holdTaps": [
+    {
+      "code": "&hrl",
+      "nodeName": "homerow_layer",
+      "tappingTermMs": 200,
+      "quickTapMs": 175,
+      "requirePriorIdleMs": 150,
+      "flavor": "balanced",
+      "bindings": [
+        "&mo",
+        "&kp"
+      ],
+      "params": [
+        "layer",
+        "code"
+      ]
+    },
+    {
+      "code": "&hrm",
+      "nodeName": "hrm",
+      "tappingTermMs": 185,
+      "quickTapMs": 175,
+      "flavor": "balanced",
+      "bindings": [
+        "&kp",
+        "&kp"
+      ],
+      "params": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "code": "&hml",
+      "nodeName": "hml",
+      "tappingTermMs": 200,
+      "quickTapMs": 165,
+      "requirePriorIdleMs": 110,
+      "flavor": "balanced",
+      "bindings": [
+        "&kp",
+        "&kp"
+      ],
+      "params": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "code": "&hmr",
+      "nodeName": "hmr",
+      "tappingTermMs": 200,
+      "quickTapMs": 165,
+      "requirePriorIdleMs": 110,
+      "flavor": "balanced",
+      "bindings": [
+        "&kp",
+        "&kp"
+      ],
+      "params": [
+        "code",
+        "code"
+      ]
+    }
+  ],
+  "layers": [
+    [
+      "&none"          ,"&kp Q"              ,"&kp W"             ,"&kp E"           ,"&kp R"               ,"&kp T"         ,
+      "&kp Y"          ,"&kp U"              ,"&kp I"             ,"&kp O"           ,"&kp P"               ,"&none"         ,
+      "&none"          ,"&hml LGUI A"        ,"&hml LALT S"       ,"&hml LCTRL D"    ,"&hml LSHFT F"        ,"&kp G"         ,
+      "&kp H"          ,"&hmr RSHFT J"       ,"&hmr RCTRL K"      ,"&hmr RALT L"     ,"&hmr RGUI SEMICOLON" ,"&none"         ,
+      "&none"          ,"&lt 4 Z"            ,"&kp X"             ,"&kp C"           ,"&kp V"               ,"&kp B"         ,
+      "&kp N"          ,"&kp M"              ,"&kp COMMA"         ,"&kp DOT"         ,"&kp FSLH"            ,"&none"         ,
+      "&kp LA(SPACE)"  ,"&mo 2"              ,"&kp SPACE"         ,"&kp LSHFT"       ,"&la 1"               ,"&kp LG(SPACE)" 
+    ], [
+      "&none"          ,"&none"              ,"&none"             ,"&kp PG_DN"       ,"&kp PG_UP"           ,"&none"         ,
+      "&ctrl_tab"      ,"&kp LC(LG(LEFT))"   ,"&kp LC(LG(RIGHT))" ,"&alt_tab"        ,"&kp INS"             ,"&none"         ,
+      "&none"          ,"&osm LGUI"          ,"&osm LALT"         ,"&osm LCTRL"      ,"&osm LSHIFT"         ,"&none"         ,
+      "&kp LEFT_ARROW" ,"&kp DOWN"           ,"&kp UP"            ,"&kp RIGHT"       ,"&kp PRINTSCREEN"     ,"&none"         ,
+      "&none"          ,"&kp LC(Z)"          ,"&kp LC(X)"         ,"&kp LC(INS)"     ,"&kp LS(INS)"         ,"&kp LC(Y)"     ,
+      "&kp HOME"       ,"&kp LC(LEFT)"       ,"&kp LC(RIGHT)"     ,"&kp END"         ,"&none"               ,"&none"         ,
+      "&none"          ,"&trans"             ,"&trans"            ,"&trans"          ,"&trans"              ,"&none"         
+    ], [
+      "&none"          ,"&kp F1"             ,"&kp F2"            ,"&kp F3"          ,"&kp F4"              ,"&kp F5"        ,
+      "&kp F6"         ,"&kp F7"             ,"&kp F8"            ,"&kp F9"          ,"&kp F10"             ,"&none"         ,
+      "&none"          ,"&hml LGUI N1"       ,"&hml LALT N2"      ,"&hml LCTRL N3"   ,"&hml LSHIFT N4"      ,"&kp N5"        ,
+      "&kp N6"         ,"&hmr LEFT_SHIFT N7" ,"&hmr LCTRL N8"     ,"&hmr LALT N9"    ,"&hmr LMETA N0"       ,"&none"         ,
+      "&none"          ,"&none"              ,"&none"             ,"&none"           ,"&kp F11"             ,"&none"         ,
+      "&none"          ,"&kp F12"            ,"&trans"            ,"&trans"          ,"&trans"              ,"&none"         ,
+      "&trans"         ,"&trans"             ,"&trans"            ,"&trans"          ,"&trans"              ,"&trans"        
+    ], [
+      "&bootloader"    ,"&kp C_BRI_DN"       ,"&kp C_VOL_DN"      ,"&kp C_MUTE"      ,"&kp C_VOL_UP"        ,"&kp C_BRI_UP"  ,
+      "&bt BT_CLR"     ,"&none"              ,"&out OUT_TOG"      ,"&none"           ,"&bt BT_CLR_ALL"      ,"&bootloader"   ,
+      "&none"          ,"&kp C_PREV"         ,"&kp LEFT"          ,"&kp C_PP"        ,"&kp RIGHT"           ,"&kp C_NEXT"    ,
+      "&bt BT_SEL 3"   ,"&bt BT_SEL 0"       ,"&bt BT_SEL 1"      ,"&bt BT_SEL 2"    ,"&bt BT_SEL 4"        ,"&none"         ,
+      "&none"          ,"&none"              ,"&none"             ,"&none"           ,"&none"               ,"&none"         ,
+      "&none"          ,"&none"              ,"&none"             ,"&none"           ,"&none"               ,"&none"         ,
+      "&trans"         ,"&trans"             ,"&trans"            ,"&trans"          ,"&trans"              ,"&trans"        
+    ], [
+      "&none"          ,"&none"              ,"&none"             ,"&none"           ,"&none"               ,"&none"         ,
+      "&none"          ,"&none"              ,"&none"             ,"&none"           ,"&none"               ,"&none"         ,
+      "&none"          ,"&none"              ,"&kp LALT"          ,"&kp LCTRL"       ,"&kp LSHFT"           ,"&none"         ,
+      "&mmv MOVE_LEFT" ,"&mmv MOVE_DOWN"     ,"&mmv MOVE_UP"      ,"&mmv MOVE_RIGHT" ,"&none"               ,"&none"         ,
+      "&none"          ,"&none"              ,"&none"             ,"&none"           ,"&none"               ,"&none"         ,
+      "&msc SCRL_LEFT" ,"&msc SCRL_DOWN"     ,"&msc SCRL_UP"      ,"&msc SCRL_RIGHT" ,"&none"               ,"&none"         ,
+      "&mkp MCLK"      ,"&mkp RCLK"          ,"&mkp LCLK"         ,"&mkp LCLK"       ,"&mkp RCLK"           ,"&mkp MCLK"     
+    ]
+  ],
+  "combos": [
+    {
+      "id": "c_capswords",
+      "keyPositions": [
+        38,
+        39
+      ],
+      "binding": "&caps_word",
+      "timeoutMs": 50,
+      "layers": [
+        0
+      ]
+    },
+    {
+      "id": "c_esc",
+      "keyPositions": [
+        2,
+        3
+      ],
+      "binding": "&kp ESC",
+      "layers": [
+        0
+      ]
+    },
+    {
+      "id": "c_bspc",
+      "keyPositions": [
+        8,
+        7
+      ],
+      "binding": "&bsp_del",
+      "layers": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "c_tg_l_mouse",
+      "keyPositions": [
+        25,
+        34
+      ],
+      "binding": "&tog 4",
+      "layers": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "c_enter",
+      "keyPositions": [
+        4,
+        3
+      ],
+      "binding": "&kp RET",
+      "layers": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "c_tab",
+      "keyPositions": [
+        8,
+        9
+      ],
+      "binding": "&kp TAB",
+      "layers": [
+        0
+      ]
+    },
+    {
+      "id": "c_sqt",
+      "keyPositions": [
+        6,
+        7
+      ],
+      "binding": "&kp SQT",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_grave",
+      "keyPositions": [
+        4,
+        5
+      ],
+      "binding": "&kp GRAVE",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_brace",
+      "keyPositions": [
+        16,
+        17
+      ],
+      "binding": "&kp LBKT",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_rbkt",
+      "keyPositions": [
+        18,
+        19
+      ],
+      "binding": "&kp RBKT",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_lpar",
+      "keyPositions": [
+        15,
+        16
+      ],
+      "binding": "&kp LPAR",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_rpar",
+      "keyPositions": [
+        19,
+        20
+      ],
+      "binding": "&kp RPAR",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_lbrc",
+      "keyPositions": [
+        28,
+        29
+      ],
+      "binding": "&kp LBRC",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_rbrc",
+      "keyPositions": [
+        30,
+        31
+      ],
+      "binding": "&kp RBRC",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_caret",
+      "keyPositions": [
+        5,
+        17
+      ],
+      "binding": "&kp CARET",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_dllr",
+      "keyPositions": [
+        6,
+        18
+      ],
+      "binding": "&kp DLLR",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_excl",
+      "keyPositions": [
+        4,
+        16
+      ],
+      "binding": "&kp EXCL",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_qmark",
+      "keyPositions": [
+        7,
+        19
+      ],
+      "binding": "&kp QMARK",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_under",
+      "keyPositions": [
+        27,
+        28
+      ],
+      "binding": "&kp UNDER",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_minus",
+      "keyPositions": [
+        32,
+        31
+      ],
+      "binding": "&kp MINUS",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_amps",
+      "keyPositions": [
+        3,
+        15
+      ],
+      "binding": "&kp AMPS",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_pipe",
+      "keyPositions": [
+        8,
+        20
+      ],
+      "binding": "&kp PIPE",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_equal",
+      "keyPositions": [
+        3,
+        16
+      ],
+      "binding": "&kp EQUAL",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_plus",
+      "keyPositions": [
+        19,
+        8
+      ],
+      "binding": "&kp PLUS",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_fsls",
+      "keyPositions": [
+        15,
+        4
+      ],
+      "binding": "&kp FSLH",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_bslsh",
+      "keyPositions": [
+        7,
+        20
+      ],
+      "binding": "&kp BSLH",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_lt",
+      "keyPositions": [
+        15,
+        28
+      ],
+      "binding": "&kp LT",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_gt",
+      "keyPositions": [
+        20,
+        31
+      ],
+      "binding": "&kp GT",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_prct",
+      "keyPositions": [
+        4,
+        17
+      ],
+      "binding": "&kp PRCNT",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_star",
+      "keyPositions": [
+        7,
+        18
+      ],
+      "binding": "&kp STAR",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_hash",
+      "keyPositions": [
+        27,
+        26
+      ],
+      "binding": "&kp HASH",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_at",
+      "keyPositions": [
+        32,
+        33
+      ],
+      "binding": "&kp AT",
+      "layers": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c_mouse_lock",
+      "keyPositions": [
+        7,
+        8
+      ],
+      "binding": "&l_lock 4",
+      "layers": [
+        4
+      ]
+    }
+  ]
+}
