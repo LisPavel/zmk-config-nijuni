@@ -398,13 +398,13 @@
           "keysyms": [
             "3",
             "numbersign",
-            "NoSymbol",
+            "numerosign",
             "NoSymbol"
           ],
           "glyphs": [
             "3",
             "#",
-            "",
+            "№",
             ""
           ]
         },

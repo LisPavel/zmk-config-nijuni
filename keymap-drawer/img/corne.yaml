@@ -108,7 +108,7 @@ layers:
   - '6'
   - {t: '7', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '8', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '9', h: LAlt}
+  - {t: '9', h: RAlt}
   - {t: '0', h: '$$mdi:microsoft-windows$$'}
   - ''
   - ''

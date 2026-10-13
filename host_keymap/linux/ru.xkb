@@ -3,7 +3,7 @@ xkb_symbols "System 3" {
 
     key <AE01> { [ 1, exclam, NoSymbol, NoSymbol ] };
     key <AE02> { [ 2, quotedbl, NoSymbol, NoSymbol ] };
-    key <AE03> { [ 3, numbersign, NoSymbol, NoSymbol ] };
+    key <AE03> { [ 3, numbersign, numerosign, NoSymbol ] };
     key <AE04> { [ 4, semicolon, NoSymbol, NoSymbol ] };
     key <AE05> { [ 5, percent, NoSymbol, NoSymbol ] };
     key <AE06> { [ 6, colon, NoSymbol, NoSymbol ] };
